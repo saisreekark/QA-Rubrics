@@ -1,0 +1,12 @@
+# Never ingest the live notebook — cell 7 contains a hardcoded ya29.… OAuth
+# token until Phase 1 of docs/execution-plan.md ships.
+notebook/content.ipynb
+
+# Graphify's own outputs and our local caches.
+graphify-out/
+evaluator/runs/
+evaluator/.hierarchy_cache.json
+**/__pycache__/
+
+# Backup CSVs the notebook dumps on sheet-write failures (already gitignored).
+backup_chunk_*.csv

@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.DS_Store
+
+# Local backups dumped by the notebook when sheet-write fails
+backup_chunk_*.csv
+
+# Never commit auth tokens / service-account keys
+**/creds*.json
+**/token*.json
+**/*service-account*.json
+
+# Evaluator outputs — timestamped CSVs + parsed-hierarchy cache
+evaluator/runs/*.csv
+evaluator/runs/*.summary.json
+evaluator/.hierarchy_cache.json
+
+# Graphify build output — regenerable; the .claude/ skill files are committed
+graphify-out/
