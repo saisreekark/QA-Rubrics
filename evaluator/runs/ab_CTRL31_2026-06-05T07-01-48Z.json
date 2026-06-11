@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "label": "CTRL31",
+    "model": "gemini-3.1-pro-preview",
+    "matcher": "gemini-2.5-pro",
+    "runs_done": 1,
+    "runs_target": 5,
+    "sample": 120,
+    "months": [
+      "2026-03",
+      "2026-04"
+    ],
+    "complete": false
+  },
+  "TTR": {
+    "runs": [
+      27.536231884057973
+    ],
+    "mean": 27.536231884057973,
+    "stdev": 0.0,
+    "ci95_half": NaN,
+    "audited_mean": 69
+  },
+  "Reopen": {
+    "runs": [
+      7.4074074074074066
+    ],
+    "mean": 7.4074074074074066,
+    "stdev": 0.0,
+    "ci95_half": NaN,
+    "audited_mean": 54
+  },
+  "Escalation": {
+    "runs": [
+      10.526315789473683
+    ],
+    "mean": 10.526315789473683,
+    "stdev": 0.0,
+    "ci95_half": NaN,
+    "audited_mean": 19
+  },
+  "DSAT": {
+    "runs": [
+      0.0
+    ],
+    "mean": 0.0,
+    "stdev": 0.0,
+    "ci95_half": NaN,
+    "audited_mean": 7
+  },
+  "OVERALL": {
+    "runs": [
+      16.778523489932887
+    ],
+    "mean": 16.778523489932887,
+    "stdev": 0.0,
+    "ci95_half": NaN,
+    "audited_mean": 149
+  }
+}

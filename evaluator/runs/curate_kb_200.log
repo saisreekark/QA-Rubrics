@@ -1,0 +1,16 @@
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution

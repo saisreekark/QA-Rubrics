@@ -12,6 +12,8 @@ import json
 from datetime import datetime, timezone
 from typing import Any
 
+import pandas as pd
+
 from google.api_core.exceptions import (
     InternalServerError,
     ResourceExhausted,
@@ -66,12 +68,34 @@ def _build_transcript_block(case_row: dict[str, Any]) -> str:
         "Case_Aging_in_Days",
         "Escalated",
         "Survey_Result",
+        # Hygiene + context fields the bot's sub-agents receive ({{Root_Cause}},
+        # {{Next_Steps}}, etc.). Without these the judge cannot verify a
+        # grounded hygiene claim (e.g. empty Next_Steps) and wrongly marks it
+        # "unsupported → Incorrect". Mirror the bot's inputs so the judge sees
+        # the same case fields.
+        "Root_Cause",
+        "Root_Cause_Description",
+        "Next_Steps",
+        "Next_Steps_Due_Date",
+        "Bug_Id",
+        "Case_Description",
         "Concatenated_Summary",
     )
+    # Hygiene fields are rendered even when blank — an EMPTY Next_Steps /
+    # Root_Cause is itself the Workflow-hygiene defect, so the judge must see
+    # "(empty)" to verify the bot's grounded claim rather than infer the field
+    # is simply missing from its view.
+    always_show = {"Root_Cause", "Root_Cause_Description", "Next_Steps"}
     lines = []
     for k in keys:
-        if k in case_row and case_row[k] not in (None, ""):
-            lines.append(f"{k}: {case_row[k]}")
+        if k not in case_row:
+            continue
+        val = case_row[k]
+        blank = val is None or (isinstance(val, float) and pd.isna(val)) or str(val).strip() == ""
+        if blank and k in always_show:
+            lines.append(f"{k}: (empty)")
+        elif not blank:
+            lines.append(f"{k}: {val}")
     return "\n".join(lines)
 
 

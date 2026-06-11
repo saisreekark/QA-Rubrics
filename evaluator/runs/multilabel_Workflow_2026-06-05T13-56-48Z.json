@@ -1,0 +1,15 @@
+{
+  "tp": 11,
+  "fp": 186,
+  "fn": 0,
+  "precision": 0.05583756345177665,
+  "recall": 1.0,
+  "f1": 0.10576923076923077,
+  "tn": 3,
+  "n_cases": 200,
+  "n_gold_error": 11,
+  "n_bot_error": 197,
+  "error_type_acc": 0.9090909090909091,
+  "error_type_classified_of": 11,
+  "n_unmapped_only": 3
+}

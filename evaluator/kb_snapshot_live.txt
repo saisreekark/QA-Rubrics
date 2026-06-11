@@ -1,0 +1,946 @@
+
+
+=== DOCUMENT: SOP_Guide ===
+Deal Split	
+This guidelines and requirements for implementing deal splits to recognize and incentivize multiple contributors involved in closing a deal.
+
+Here's a summary of the key points:
+Purpose: To ensure equitable distribution of attainment based on individual impact, with greater shares allocated to those who significantly influenced the deal's success.
+Important Notes:
+All split allocations and approvals must be finalized and documented before a deal is closed.
+Total split allocation must equal 100%.
+Minimum individual split is 10%.
+Applicable to Bookings and Subscriptions, but not Revenue or CoW.
+Before You Begin (Guidelines):
+Obtain all required approvals via email before the deal's close date.
+Ensure distribution is clearly documented and adds up to 100%.
+Ensure the deal is officially closed.
+FSR must wait for the deal to reflect in Rainmaker, then create a Vector case requesting a deal split, and submit a deal split request form.
+Requirements:
+FSRs need to confirm their role and product eligibility in the T&Cs.
+Additional restrictions may apply for splits involving Specialists.
+Only agreements made within the current fiscal year are valid.
+Submissions must be made within the quarter of the deal booking date and within published quarterly deadlines.
+Distribution agreements and approvals must be documented and timestamped in writing before the deal is closed in Vector.
+Submissions must include impacted Sales Googlers and their documented approval (e.g., FSR/KAE/D, FSM, Sales Director, RSO; VP approval for TBH NALs), and any justification.
+Generic Timelines:
+Deal reflects in Rainmaker approximately 3 business days after booking.
+Split can take up to 72 hours to be fully processed and reflect in Rainmaker from case creation.
+FAQs:
+For account split inquiries, contact your RSO.
+Approvals dated after the deal close date will be denied, subject to Compensation Exception Committee (CEC) review.
+
+Opportunity Edits
+	
+Here is a summary of the process steps for each major issue category:1. Update Linked Account
+| Opportunity Status | Scenario | Process Steps |
+| Open | Any | Opportunity Owner or Opportunity Team Members with Read and Write access make the update. |
+| Closed | Product FALLS UNDER specific scenarios | Route the case to the OMPF team. |
+|  | Opportunity falls under ISV | Advise seller to send an email to isvconnect@google.com. |
+|  | SAP RISE Opportunity | Tag Rohit Kamath (rohitkamath) for making the updates. |
+|  | DOES NOT FALL under above scenarios | Reopen opportunity first by asking for approval from: Opportunity Owner, RSO, Current Account Owner, or Desired Account Owner. Once approved, proceed with the change. If approval is rejected, close as Infeasible. |
+2. Updating Opportunity Stage
+| Request Type | Scenario | Process Steps |
+| Move Forward (to Stage 4/Closed Won) | ISV or SAP RISE | Follow the specific ISV/SAP RISE process (email or tag). |
+|  | Not ISV or SAP RISE, and Case Requester is not Opportunity Owner | Ask for approvals from Opportunity Owner or RSO. If approved, check product scenarios (route to OMPF if applicable). If not approved or not applicable to OMPF, update stage and close as resolved. |
+| Move Backward (from Stage 4 or in between) | ISV or SAP RISE | Follow the specific ISV/SAP RISE process. |
+|  | Product falls under specific scenarios | Route the case to the OMPF team. |
+|  | Not ISV or SAP RISE | Ask Opportunity Owner or Opportunity Team members with read/write access to make changes. If they encounter an error, SDI steps in. If SDI encounters an error, ask approval from Opportunity Owner or RSO (if requester is not owner). Proceed/close based on approval. |
+| Move Backward (from Stage 4 - Closed Lost) | Fields to be updated are: Opportunity Name, Domain (add), Close Date, Opportunity Owner, or Opportunity Amount | Route the case to the OMPF team. |
+|  | Other fields or no errors | Ask Opportunity Owner or member of the Opportunity team with Read and Write access to move the stage backwards. If errors, ask approval from Owner or RSO (if not case requester). Proceed/close based on approval. |
+3. Update Close Date
+| Scenario | Process Steps |
+| Opportunity is ISV | Advise case requester to send an email to isvconnect@google.com and close case as infeasible. |
+| Close date is BEFORE the creation date | Tag Comp Ops Admin or Carmella Weatherill. |
+| Close date is AFTER the creation date | Opportunity Owner or Opportunity Team Members with Read/Write access will be able to update. If they successfully update, close as resolved. |
+| Owner/Team faces an error | If Case Creator is the Opportunity Owner or RSO, SDI can update and close as resolved. If not, take approval from Opportunity Owner or RSO and proceed with change. If approval is rejected, close as Infeasible. |
+4. Change Opportunity Owner
+| Scenario | Process Steps |
+| No Opportunity Owner AND Opportunity Owner = Account Owner | SDI can make the change and close as resolved. |
+| No Opportunity Owner AND not equal to Account Owner | Follow the flow for Chrome Product Family (PPS requester) or advise team members to make the change (if not Chrome). If linked to SMB, follow Opportunity Linked to SMB Account flow. |
+| Opportunity has an owner and they are having trouble | Check the Opportunity Linked to SMB Account or Opportunity Linked to Field Account flows. Approval from Opportunity Owner or RSO is often required if the Current Account owner is unavailable. |
+5. Update Opportunity Source
+| Opportunity Stage | Scenario | Process Steps |
+| Open (not in Stage 4) | No error | Tag the current Opportunity Owner to update and close as resolved. |
+|  | Error faced by Owner | SDI Team updates the opportunity source and closes as resolved. |
+| Closed (Stage 4) | No error | SDI Team updates the opportunity source and closes as resolved. |
+|  | Error faced by SDI Team | Transfer the case to the Data Ops team (Helpdesk-PS-Data-Tier-2). |
+6. Editing/Adding Opportunity Partners
+| Opportunity Stage | Scenario | Process Steps |
+| Stage 4 | No error, Partner is Partner/Premier Level | Opportunity Owner or team members with Read&Write access update. |
+|  | Error faced by Owner/Team | SDI Team can add/update and close as resolved. |
+| Stage 1, 2, and 3 | No error | Opportunity Owner or team members with Read&Write access update, then SDI team closes as resolved. |
+|  | Error faced, Case Requester is different from Owner/RSO | Collect approvals from Opportunity Owner or RSO. If approved, update and close as resolved. If rejected, close as Infeasible. |
+|  | Partner account is Member Level | Advise case requester to raise a ticket to go/salesPSD. |
+| General | Deletion of partner requested | Deletion is prohibited. Advise to update to “INACTIVE status.” |
+|  | SDI team encounters errors (Pre or Post Close contribution) | Transfer to the Partner Team. |
+7. Add or Remove Opportunity Team Members
+| Scenario | Process Steps |
+| General update/removal | Must be done by the respective Opportunity Owner or current team members with read/write access. |
+| Case Creator is not Opportunity Owner | Tag Opportunity Owner, inform on steps to set up a Default Opportunity Team. If error is faced, forward case to technical team. |
+| Set up Automatic Default Opportunity Team | Navigate to Vector personal “Settings” -> Advanced User Details -> Default Opportunity Team. Add coworkers, select access/role, select the two automatic addition options, and click “Save.” |
+| Manually Adding Team Members | Open Opportunity, navigate to the “Opportunity Team” quick link, and click “Add” or “Add Default Team.” An RSO, PDM, or the Oppty Owner's HR Manager can also manually add users if the Owner is unavailable. |
+8. Update ACV
+| Scenario | Process Steps |
+| Opportunity Amount, Terms, and Watermark/Amount are correctly configured | Transfer this case to the PSS team (Technical Issues). |
+| Other | Confirm configuration with the Opportunity Owner. |
+9. Update the Opportunity Amount or Products (SKU)
+| Opportunity Stage | Scenario | Process Steps |
+| Open (and not Stage 4) | No error | Opportunity Owner can remove and re-add the products, close as resolved. Note: If seller cannot edit due to Quote Related issues or amount reverts, follow Quote Updates flow. |
+| Closed AND EDITABLE | ISV or SAP RISE | Follow the specific ISV/SAP RISE process (email or tag). |
+|  | Neither ISV nor SAP RISE | Route to OMPF. |
+| Closed AND UNEDITABLE | Falls under specific product/entity types (GCP commit, PSO, M&A GCP, GWS legal entity EA closed by OMPF) | Route to OMPF. |
+|  | ISV or SAP RISE | Follow the specific ISV/SAP RISE process. |
+|  | Does not fall under points above | Opportunity Owner can remove and re-add the products. If seller encounters an error, SDI makes the change and closes as resolved. |
+10. Update Terms (Months)
+| Opportunity Stage | Scenario | Process Steps |
+| Stage 4 | Falls under specific product/entity types (GCP commit, PSO, M&A GCP, GWS legal entity EA closed by OMPF) | Route the case to OMPF. |
+|  | ISV or SAP RISE | Follow the specific ISV/SAP RISE process. |
+| Stage 4 AND DOES NOT FALL under above scenarios | User wants to update the Primary Quote | Route the case to the CPQ team. |
+|  | User needs to update the Opportunity Solution | See the "Add/Edit Opportunity Solution" flow. |
+|  | Term is not editable (Read only information) | Close case as Infeasible. |
+11. Add/Edit Opportunity Solution
+| Scenario | Process Steps |
+| Add NEW Opportunity Solution that DOES NOT EXIST in the Current Solution List | Route the case to PSS. |
+| Change EXISTING Solution or Add an EXISTING Solution | If Opportunity is in Stage 1, 2, 3: Opportunity Owner and the Opportunity Team Members can make the change. |
+Public Sector	
+This document outlines the structure, policies, and compensation plan details for Google's Public Sector business, which includes "Google Public Sector LLC (US GPS)" for the US market and "International Public Sector" for other regions.
+Key points include:
+Organizational Structure: US GPS is a standalone sales organization, while International Public Sector reports into geographic regions within Google Cloud. Canada Public Sector follows US GPS compensation policies.
+Account Definition & Segmentation: Attainment eligibility is defined at the child account level for both US GPS and International Public Sector. All Public Sector accounts are classified as "Enterprise."
+Public Sector Subscription Agreement (PSSA): This unique contracting model is primarily used by US GPS and International GPS sellers, generating attainment based on specific rules. A recent update to PSSA breaks down line items for product-level consumption, allowing for accurate multiplier application.
+Compensation Plans & Updates (FY24 to FY25):
+Plan 2058: Shifts from 100% DA & AI Revenue to DA Incremental Revenue and Maps N/E Revenue (30%).
+Plan 1012: Removes the Count of Win (COW) component and adds PSSA Consumption.
+Plan 1011: Expands to include Bookings, GCP Revenue & PSSA Consumption, and PSO Bookings.
+US Public Sector Specifics: Has Booking, Revenue & Count of Win components (Plans 1011, 1012), quarterly accelerator payouts, and measures count of wins at the child account level. A special EA_PUBLIC SECTOR BUNDLE SKU is available for US Public Sector customers.
+Additional Plan Information: Plan 3103 for US GPS Security Specialist/CE and Plan 3112 for US GPS Security Renewals Specialist.
+Triage Details for Cases: Essential information is listed for triaging Mandiant, Google Workspace (GWS), and PSSA cases.
+Rainmaker Timeline: Attainment visible in the seller_attainment table may take 48-72 hours to reflect in the Rainmaker dashboard.
+
+SPIFF
+This document explains what a sales SPIFF (Sales Performance Incentive Fund) is, providing guidance on eligibility, common issues, and how to get assistance.
+
+The SOP in the "Compensation/Attainment Help | SPIFF" document is a guide for the Compensation/Attainment (C/A) team on managing the Sales Performance Incentive Fund (SPIFF) process, covering eligibility, payout, and case management.Key SOP Procedures
+What is SPIFF? A SPIFF, or sales performance incentive fund, is a commission paid to sales representatives for meeting or exceeding sales goals. Rules for eligibility and winning criteria are specific to each SPIFF.
+Payout: SPIFFs are paid quarterly along with the sales bonus amount. The amounts are converted to local currency using a specific conversion rate (
+go/bonusscale-2025
+).
+Viewing Payout: Sellers view their SPIFF payment details under Quarter Adjustments in the Overview and Bonus Statement tabs in Rainmaker (
+go/rainmaker
+). SPIFFs are not a separate line item on the paycheck; they are summed with the quarterly Sales Bonus.
+Case Management (Triaging Steps)
+
+When a seller creates a Vector case under the SPIFF category, the agent's triaging steps are as follows:
+Determine Query Type:
+If the query is on payment (PII): The Queue Manager must assign the case directly to Kyle (Comp Admin SPOC).
+If the query is on payment date and sales rep eligibility: The analyst can work and respond to the query.
+Check Eligibility and Payout Status:
+Eligibility: The agent must check if the seller is eligible based on the criteria for the specific SPIFF type. If eligible, they will be paid in the next quarter.
+Dashboard Check: The agent should check the SPIFF Dashboard (
+go/salescomp-spiffs
+) to see if the SPIFF has already been paid.
+Seller Guidance (If Already Paid):
+If the SPIFF is already paid, the agent guides the seller: "Your pay slip will not show a separate line for the SPIFF, it will be summed up with your Q1 sales bonus so please refer to Rainmaker (go/rainmaker) for the expected payment amount."
+Investigation (If Not Paid):
+If no data is found in the dashboard, the agent continues triaging to determine why the seller didn't receive it (e.g., they may not be eligible). The agent needs to confirm with the seller which SPIFF they are inquiring about to start the investigation.
+Case Follow-up and Closure:
+Agents keep the case open for up to 5 working days with 3 follow-up attempts. If there is no response, the case is closed on the 5th working day with a canned response.
+Escalation: If a seller disagrees with the rejection of the SPIFF based on eligibility criteria, the agent needs to escalate the case to Kyle for further review.
+
+SMB
+This document is a Standard Operating Procedure (SOP) for the Cognizant Compensation Help Desk (C/A) employees, outlining the workflow for managing and resolving compensation and attainment issues for Small and Medium Business (SMB) accounts, specifically for the 9001 and 8001 Compensation Attainment plans for Workspace sales teams.
+
+The SOP is structured around a step-by-step procedure:1. Case Identification and Requirements
+Purpose: To help C/A employees understand and resolve SMB compensation/attainment issues.
+Scope: Applies to the GTM Cloud Helpdesk, focusing on 9001 and 8001 plans for SMB Workspace sales.
+Key Checks: Verify the account segment is SMB in Vector, and the seller's manager is under Sharon Prosser. Ensure the correct issue category/sub-category, a clear case description, and the Opportunity ID are provided.
+Missing Details: If important details are missing, send a Canned Response (CR), set the case to WOCA (Waiting on Customer Action), and close the case after 5 days if no response is received.
+2. Case Triage and Investigation
+Primary Queries: Run queries in Cockpit and GCC Bookings to gather data like sales_status, usd_acv, and subscription details.
+Attainment Calculations: Details how to calculate attainment for Account Management (AM) (Positive Incremental ARR, or iARR) and New Business (NB) (Annualized Contract Value, or ACV) reps.
+Sales Status Resolution:
+"Won": Advise the rep to check the Customer Issue Dashboard; attainment will be in the next payout.
+"Not Won" (e.g., Prospect-1, 2, 3): This indicates no "win" event. Requires verification of a valid win event (SKU upgrade or User Increase of >10% and at least 10 seats). Requires checking if the SFDC opportunity is Closed Won ("Stage 4").
+"Prospect-4": Suggests manual opportunity errors. Requires rep correction and a 24-hour wait for system refresh.
+3. Common Disqualification Reasons & Issues
+
+The SOP details resolution steps for various issues, including:
+Deal disqualified due to User Increase (UI) being < 10% of previous quarter seat count.
+Domain Not Found or Incorrect Opportunity being considered by Cockpit.
+AM/NB Program Mismatch and how to verify the correct assignment using Cockpit and Cloud Roster.
+Deals for Non-Core SKUs, PDL Deals, and GCP Cross-Sell require specific investigation and often Exceptions.
+4. Submitting Exceptions
+When to use: When system issues or Cockpit limitations prevent attainment.
+Process: Manually calculate attainment, fill out the Pre Exception trix sheet with detailed deal information (Program, Domain, SKU, Bookings amount, etc.), and get SME Approval. Approved exceptions are moved to the Production trix.
+5. GCP and Other Plan-Specific Rules
+Provides detailed procedures for troubleshooting GCP Attainment (Revenue and Count of Wins/CoW), which requires checking the smb_attainment_eligibility table, NAL assignment, and transaction tables.
+Highlights different primary eligibility for Looker (Plan 6050) & Security (Plan 6060) deals, where being on the Opportunity Team or Owner is the key factor, not NAL.
+Includes policies for SMB Security Sales & Customer Engineer Team, outlining territory and opportunity ownership rules for New, Expanding, and Existing accounts.
+6. Timeline and Resources
+Exception Submission Deadline: 48 hours from the ticket submission deadline (e.g., April 5th, July 5th, Oct 5th).
+Data Refresh: Data tables are refreshed daily by 10:00 AM PST. Approved exceptions reflect in the Exception Dashboard within 24 hours.
+Lists key roles (SME, Analysts, Manager) and their turnaround times.
+Provides links to related SOPs, sales policies, and training videos.
+
+Understanding the Cloud Hierarchy and Its Impact on Sales Compensation at Google Cloud
+"Understanding the Cloud Hierarchy and Its Impact on Sales Compensation at Google Cloud," explains how Google Cloud structures its products and services and how this impacts sales compensation.
+
+Part 1 Metadata (Trix) :(Finance product Hierarchy dashboard) Cloud Product Hierarchy Explorer (go/cloudhierarchy ) 
+The Cloud Hierarchy Dataset is an eligibility matrix that details which revenue activities for Google Cloud Platform (GCP), Google Workspace, Maps, and Chrome are eligible for compensation.
+The data is organized into a four-level hierarchy:
+Level 1: Top-level business areas (e.g., GCP, Google Workspace).
+Level 2: Product families within Level 1 (e.g., GCP Security, GCP Analytics).
+Level 3: Specific product areas within Level 2 (e.g., Cloud Bigtable, Cloud Spanner).
+Level 4: Individual products or SKUs.
+For most of the listed products, "Total Revenue" and "Incremental Revenue" are marked as Eligible for compensation under specific plan IDs. Conversely, many specific booking types, such as "Apigee Bookings," are consistently listed as Not Eligible. The document provides a clear, structured view that allows a compensation chatbot to quickly determine compensation eligibility for various transaction types
+
+Part 2 Metadata (Doc): Core Components of Sales Compensation Systems within a Cloud Hierarchy
+This document explains how Google Cloud links products (SKUs) to sales compensation. It covers:
+SKUs: Unique product identifiers for tracking sales.
+FPH: A hierarchical system for product categorization, used for reporting and comp plans.
+Compensation Plans: Rules defining how sales performance translates to earnings, using FPH for eligibility.
+Cloud Hierarchy: A dashboard (go/cloudhierarchy) visualizing SKU-FPH-Comp Plan relationships.
+Key Interaction: Sales (SKUs) are mapped to FPH, and Comp Plans use FPH to define payout rules (including baselines, watermarks, multipliers).
+Product Groups: Groupings of products used for reporting, forecasting, and setting quotas.
+Key Terms: (SKU, FPH, Quota, Attainment, OTV, Baseline, Watermark, Multiplier, Accelerator, Plan ID, NAL, Cloud Hierarchy).
+BPH: Business Product Hierarchy, FPH often defaults to BPH, but Product Finance Vertical teams may make adjustments.
+Use Cases: System design, architecture explanations, integration guides, and data architecture.
+Partner Compensation
+Inquiries regarding Partner Revenue for specific MBO plans (e.g., FY25: 50003, 50004, 50007), confirming a Partner MBO Score CoW, or discrepancies in PLX dashboards (e.g., go/OnePagePartners) are out of scope for the comp admin team. For these, sellers should contact their manager, RSO, or the dashboard owner.
+Exception MBO Plans: RSOs complete rep plan assignment in Anaplan. Managers work with RSOs to define objectives and create quarterly scorecards. RSOs provide assessment ratings to the Comp Admin team for processing payouts.
+For data visibility issues with MBO plans like 50003, 50004, 50007, first contact your Manager or RSO. If they cannot resolve it, file a ticket at go/ask-central-bi. For PLX dashboards, contact the dashboard owners.
+FAQ highlights:
+To update partner information in Closed Won Opportunities, submit a Partner Attach Exception request.
+Changes in Attribution percentages are handled by your Manager and RSO.
+MBO scores are visible at the end of each quarter at go/Rainmaker. For inquiries or discrepancies, contact your Manager or RSO.
+Pre-close attach requires "material value" contributed prior to the win, influencing the sales cycle. Only the first partner with "Material Value" Pre-close contribution qualifies.
+Post-close attach focuses on "Post-Contract Contribution" or "GCP Partner Influenced Revenue" (e.g., migration, implementation) after the contract is signed.
+If a partner does both reselling and post-contract contribution, they receive only resold revenue.
+If a seller changes role/territory or terminates mid-quarter, their MBO plan and OTV are prorated based on time spent and achievement.
+Point of Contact: Hemanth K R (xWF) at hemanthkr@google.com.
+Account info Edits: 
+Here is a summary of each issue subcategory for Account Information Edits, including the required validation steps and the subsequent next steps, based on the Standard Operating Procedure (SOP).
+
+Legal Name/Address Change :- 
+| Validations | Next Step |
+| * Requester provided the necessary details (Account ID, desired legal name/address). | * Duplicate Check & Merge: Check for duplicates. If a valid duplicate is found, seek seller approval to merge. If approved, follow the sales account merge flow (manual merge if Roomba/Destiny request fails). |
+| * Account Record Type is Customer Type. | * Seller Disagreement: If seller disagrees without justification, reject the case as "Infeasible" after 24 hours. If justified, check if the requestor and account owner are different. |
+| * Account Verification status is Verified or Manually Verified. | * Owner Approval: If requestor/owner are different, collect approval from the current account owner. If rejected, close as "Infeasible" after 24 hours. |
+|  | * Verification (D&B/Hoovers): If approved, check the desired name/address against D&B Hoovers to find the correct Dun's Number. |
+|  | * DUNS Not Found: Ask the user for valid proof (legal registration details, tax ID). |
+|  | * DUNS Found: Create a consult with the SHD to PS Data - Customer Main team and send CR-67 to the seller. Verify changes on the system page and close as "Issue Resolved." |
+|  | * Changes Not Reflected: Create an internal consult with an SME for validation. |
+| If Account is not verified: | * Route to Issue Category "Sales Account Verification" if only verification is requested, or create a child case and route to the "Helpdesk-PS-Data-Tier-1-HYD" queue for additional data corrections. |
+| If Customer Record Type is Partner Type: | * Route to Issue Type "Partner Data Issue" and Issue Category "Partner Information Edits" in the "Helpdesk-PS-Data-Tier-1-HYD" queue. |
+| If Customer Record Type is Support Type: | * Inform the requester/seller to create a bug and send the appropriate Canned Response (CR). |
+
+
+Account Name/Billing Address Update - 
+| Validations | Next Step |
+| * The agent has to check if the requester has provided the necessary details, including the Account ID, desired account name, and desired billing address. | * If the case requester and the account owner are different, suggest the account owner make the changes. |
+|  | * If errors occur while making changes, require screenshots for the agent to update the required fields. |
+|  | * If the account owner is able to make the changes, close the case. |
+|  | * If the account does not have an account owner, the agent follows the Lucid chart to validate the change prior to making it in Vector. |
+
+Legal Entity/PPID/Invoice/Flex Agreement/Invoices Update
+| Validations | Next Step |
+| * Process requires ensuring the requester has provided the desired opportunity ID to make the changes. | * Route the case to the Deal Support team by using the "Transfer case" function and selecting Issue Type "Deal support" and Issue Category "Other Deal issue related Query". |
+
+Contact Update
+| Validations | Next Step |
+| * Request is related to updating the contacts of the account. | * Route the case to the Helpdesk-PS-Tier-1-HYD Team by using the "Transfer case" function and selecting Issue Type "Sales Data issue" and Issue Category "Sales Contact Update". |
+
+Account Verification Update
+
+| Validations | Next Step |
+| * Request is related to verification of the account. | * Route the case to the Helpdesk-PS-Tier-1-HYD Team by using the "Transfer case" function and selecting Issue Type "Sales Data Issue" and Issue Category "Sales Account Verification." |
+
+
+Account Ownership
+Account Ownership & Segmentation Policy Summary
+This summary outlines the processes for handling various account ownership and segmentation requests, based on the account type, creation date, and desired owner.
+
+| Request Type | Segment/Role | Condition | Action | Key Contact/Process |
+| Ownership (GPS) | Public Sector (PS) | Desired Owner is PS FSR AND Account qualifies for PS. | Raise an ETM request by clicking "Request Owner change" on the account page. | "Request Owner change" |
+| Ownership (GPS) | Public Sector (PS) | Account already assigned to a PS rep, and RSO wants to reassign. | 1. Collect approval from the current owner. 2. Raise a Consult with SME for an Exception Request. | Consult with SME |
+| Ownership (Field) | SMB to Field | Account created in 2025 AND Case raised within 15 days of creation to update segment/ownership. | Validate the account per policy. If it qualifies, raise an ETM request (click "Request Owner change"). | ETM Request |
+| Ownership (Field) | SMB to Field | Account crossed 15 days creation date OR is a very old account. | Suggest seller raise the request with the Planning Team during the FY2025 planning phase. | Planning Team |
+| Segmentation | General | Account created in 2025 ($\le 15$ days) to update only segment (e.g., Corp to ENT) without ownership change. | Recommend the user proceed through the CEC process. | CEC |
+| Segmentation | SMB to Startup | Graduation/ownership change. | Driven by an automated dynamic engine. | Automated Engine |
+| Ownership (SMB) | SMB-GCP (AM/NB) | Request to update SMB account ownership. | Suggest user raise a bug using go/accountmove and reach out to POC: Rodrigo Vazquez Maquinay. | go/accountmove & POC |
+| Ownership (SMB) | SMB-GWS NB rep | Ownership not flowing from Opportunity/errors exist. | Suggest user reach out to POC: Beily Pan. | POC: Beily Pan |
+| Ownership (SMB) | SMB-GWS AM rep | Request to update SMB account ownership. | Suggest seller submit the request through go/changeassignments and reach out to POC: Eva Xu. | go/changeassignments & POC |
+| Ownership (Field-Field) | Same Region | Account has > 5k Quota. | Suggest the user go through the CEC process. | CEC |
+| Ownership (Field-Field) | Same Region | Account has < 5k Quota. | Raise the ownership request (click "Request Owner change"). Send the approval steps to the user. | "Request Owner change" |
+| Ownership (Field-Field) | Same Region (Constraint) | Desired rep role is Google Workspace Rep/Specialist. | Constraint: Cannot be updated as Owner; can only be added to the Account Team. | Account Team Only |
+| Ownership (Field-Field) | Different Region (General) | Standard request for a cross-regional ownership change. | Suggest the user reach out to the Planning Team. | Planning Team |
+| Ownership (Field-Field) | Different Region (HQ Change) | Request due to Headquarter change. | 1. Collect approval from both RSOs. 2. Submit the request in Trix. 3. Create a Consult with SME for an Exception Request. | Consult with SME |
+
+Billing ID Moves
+The SOP is intended to help Cloud GTM HelpDesk Support Specialists, Training Teams, Quality Analysts, and Managers triage cases under the Billing ID Moves Issue Category. It supports mapping four types of BIDs to a customer account: Argentum (AR), Vanilla (VA), Dasher (DA), and SAP.Procedure
+
+The process for a Billing ID Move involves several steps, depending on the scenario:
+Request Initiation: A Seller can raise a request via:
+Destiny (BACS): An automated Billing Account Claim System, for most cases.
+Helpdesk (HD) Case: Created for Roomba Fallout scenarios (e.g., SAP BID, Unmapping, Graveyard accounts, Account Splits, Google Cloud owned, bulk requests), with an agent assigned to work manually.
+Triage and Validation: The Cloud GTM Helpdesk Agent:
+Triage cases based on the issue category and follows a detailed set of BID Validation Steps (Steps 1-18 in the SOP).
+Gathers or requests necessary information (BID, Desired Account ID, Opportunity ID, etc.).
+Checks for bulk requests (>5 BIDs require an internal consult and a specific bulk template).
+Validates account types (e.g., checking if the Desired Account is a Partner type, which requires routing to the PSS Team).
+Resolution:
+The agent asks for necessary acknowledgements from respective account owners and RSOs (Regional Sales Strategy and Operations).
+Once the solution is provided, the agent informs the seller and closes the case as "Issue Resolved."
+In Roomba fallout scenarios, DataOps processes the mapping post-Helpdesk approvals and form-based execution.
+Timeline
+New Roomba request: Completed within 24 hours.
+Vector Acknowledgement, Notification, and Submission of forms (for manual cases): Completed within 10 calendar days.
+Escalation: If the Seller is not satisfied or the request is rejected, they can Escalate the case via Escalate Functionality on Vector.
+Routing Teams
+
+Cases are transferred to different teams based on the issue description:
+| Issue Description | Transfer to |
+| Support Type | CS-PSS |
+| Partner Type | PSS Team |
+| Order related Issues | OMPF |
+| Merge BID’s, Create BID, Create Payment profile, BMOD issues, Online Billing Issues, Billing Legal Name and Address Change, Invoice Disputes, Migrate existing Billing Accounts | Cloud Billing Support |
+Decision Points
+When to raise a Roomba request (automated via Destiny): In case of BID types VA (Vanilla), DA (Dasher), and AR (Argentum).
+When to take a case via vector acknowledgment and submit a form (manual HD case): In case of BID type SAP, Split, and Fallout Scenarios.
+Definitions
+BIM (Billing ID Move): A process to ensure a payment account and its spend are flowing to the correct end-customer account for accurate attainment.
+PAM (Payment Account Move): Former name for BIM.
+BACS (Billing Account Claim System): A Destiny-based automated system for resolving most Billing ID mapping issues and the initial intake system.
+RSO (Regional Sales Strategy and Operations): Supports Field Sales Representatives (FSRs) and works on Sales Strategy.
+CEC (Escalation process for users to receive one-off approval via a board within COE): Used for exceptions.
+AR (Argentum): Primary identifier for the Argentum monetiser (GCP).
+DA (Dasher): Primary identifier for the Dasher Commerce monetiser (Google Workspace).
+SAP (Systems Applications and Products in Data Processing): A primary identifier; SAP BID movements are currently not supported by Roomba and require a manual Helpdesk case.
+VA (Vanilla): Former "source of truth" for all orders, no longer actively refreshed.
+
+Hierarchy Changes
+The SOP's purpose is to standardize how the Cloud GTM HelpDesk processes hierarchy updates to ensure revenue flows to the correct owners.
+Scope: The SOP applies to Cloud GTM HelpDesk Support Specialists, Training Team, and Quality Analysts.
+Initial Steps:
+A case is assigned with the category "Sales Hierarchy Change."
+Agents must check that the seller provided Parent Account ID and Child Account ID.
+Account Checks & Validations (SDI team works only on Customer accounts):
+Record Type Check: Reject cases involving Support, Partner, or mixed account types. Re-route requests involving Rollup & Partner accounts to Partner Data issues.
+Previous Request Check: Agents must check the Hierarchy Summary Dashboard for any existing requests.
+Graveyard NAL Check: Hierarchy changes cannot be processed if a Graveyard account is involved; the seller must seek approval from their VP (for a Child account) or RSO (for a Parent account).
+Subsidiary Relationship Check: Hierarchy can only be added if the accounts have subsidiary/branch relationships, which must be supported by proof (e.g., public announcement, external search, company websites).
+Account Segmentation Check: The desired Parent account should result in a higher segment. The Child account inherits the Parent's ownership/region/geo, or the Parent takes the Child's segment, depending on which account has the higher segment.
+Account Split: Hierarchy cannot be processed if the Child account has a Global Split.
+3-Level Hierarchy Check: Only a 2-level hierarchy is accepted. Agents must suggest moving child accounts under the desired parent or ultimate parent.
+Processing the Change:
+Ownership Check: If both accounts have the same owner, the request is processed in Roomba (an automated tool). If accounts have different owners, the request is processed via ETM (Enterprise Territory Management).
+Roomba Request: Agents raise the request and provide the request ID and pending approvers. If Roomba provides an error, a manual hierarchy validation is processed.
+Standalone Requests: Most requests to make an account stand-alone are restricted to the 2026 planning cycle, with some manual review exceptions in 2025 for cases with valid proof (e.g., distinct legal entity, 3rd party validations).
+Approvals: Agents must ensure both accounts are approved and obtain acknowledgements from relevant parties based on the In-Year Guidelines Acknowledgement & Validation Matrix.
+Timeline/Timeframes
+
+The document and related resources specify the following timeframes within the process:
+Previous Roomba Requests: A Roomba request rejected or pending for more than 10 days is considered rejected, and the PPR process starts. Requests created within 10 days with a pending status require providing the request ID and pending approvers.
+Request Reflection:
+Once a request is approved and executed, it is expected to reflect in downstream systems within 24 hours.
+An additional 72 hours is needed for the change to reflect in Rainmaker.
+Appeals: Rejected requests in Roomba or ETM can be appealed within the first 5 days post-rejection.
+Delegation: Approvers who are out of office or on the Do Not Contact (DNC) list must delegate their approvals.
+
+Merging Account
+The core procedure involves several steps, starting with an automated check and moving to manual validations if the automated tool fails.
+Case Assignment & Initial Check:
+Merge case is assigned with the issue category "Sales Account Merge."
+The agent checks if the seller provided the Master Account ID and Duplicate Account ID. If not, the agent must reach out to the seller for the information.
+Hierarchy Check (Initial Validation):
+Validate initially based on Legal name and Legal Address.
+If names/addresses are very similar, consider them a duplicate and proceed to Account Record type Check.
+If names/addresses are different, agents can suggest Hierarchy after verifying the subsidiary relationship.
+Raise Roomba Request (Automated Tool):
+The agent submits the request through Roomba/Destiny, an automated tool to validate merge conditions and forward for approvals.
+The agent shares the request ID and respective approvers' LDAP IDs.
+Manual Merge Validations (If Roomba gives an error):
+The agent follows a series of manual checks only if the Roomba request provides an error (e.g., Name/address/Domain mismatch, Duplicate is a headquartered account, Graveyard/Split account).
+Account Record Type Check: Ensure both are Customer accounts. Reject or re-route if they are Support or Partner accounts, or a mix.
+Previous DQ Request Check: Check the Merge Summary Dashboard for any existing or recently rejected/pending Roomba requests.
+Graveyard NAL Check: Cannot merge a Graveyard account or merge into one without VP or RSO approval to move the account out of Graveyard status.
+3-Level Hierarchy Check: Check if the Duplicate account has child accounts and suggest moving them under the desired master account if necessary (Google policy only accepts 2-level hierarchy).
+Account Segmentation: The surviving account should have the higher segment (SMB, Startup, Corporate, Enterprise, Select).
+Account Tag: The surviving account should have the higher Account Workspace type (GCP tag takes priority).
+Conflict in Segment and Type: If the duplicate has a higher segment but the master has a higher account type, the account with the higher type survives.
+Account Split: Cannot merge a Split account. If the Duplicate account is the sole account that has split, suggest a Reverse Merge.
+Public Sector: Public sector accounts cannot be merged into a non-public sector.
+HQ Account: HQ accounts cannot be merged into a non-HQ sector.
+Merge Validations: Final validation for similar legal/account names and loosely matching domains/billing addresses. Investigate for subsidiary proof if validation doesn't match.
+Market Mover Check: RSO approval is required if the account is classified as a Market Mover.
+Active Mandiant Project Check: Merging Duplicate accounts with Active Mandiant projects is restricted in-year.
+Account Approval: Agents can only process a merge if the master account is approved.
+CM Account mapping: Both accounts must be accurately mapped in the Customer Main (CM) system.
+Acknowledgement:
+Agents must obtain approvals from relevant parties based on the Acknowledgement & Validation matrix.
+Follow the 10-day WOCAP protocol (5 Vector follow-ups on alternating days, 1 Google Chat follow-up).
+Pending Policy Review (PPR):
+If a request is rejected by some parties and approved by others, and one party escalates, the escalation team reviews it with a 5-day SLA.
+Notification:
+Agents must notify relevant parties and check the do not contact list.
+Execution (Roomba fallout/Escalated):
+Merge execution is processed by submitting the Account Merge Request Form.
+Expected Completion Timeline
+| Task | Expected Completion / SLA |
+| FMR (First-time Merge Request) | 24 hours |
+| Acknowledgement (WOCAP protocol) | 10 days |
+| Requires clarification from seller | 5 days |
+| PPR Business justification from seller | 5 days |
+| Merge form Execution | 24 - 48 hours |
+| Revenue update | 72 hours |
+| Quota update | End Of Quarter (EOQ) |
+
+
+Large Booking Bonus
+
+The 2025 Large Bookings Bonus aims to incentivize specific, impactful deals.
+Deals must have a minimum incremental ACV of $3M and close in 2025.
+Various sales roles are eligible for payouts, with limits on the number of recipients per deal.
+A payout pool cap is set at the lower of 1.5% of incremental ACV or $300K.
+Additional payout opportunities and SCC multiplier opportunities are available for qualifying deals.
+The following roles are eligible:
+* FSRs, CEs, and first line FSMs (other managers are ineligible; all US GPS sellers are ineligible).
+* Corporate FSRs eligible as long as they are the only FSR on the account.
+* Specialist sellers & CEs (all first line and higher specialist managers are ineligible).
+* SMB Sellers (WS & GCP) and first line managers.
+* CALs (all first line and higher managers are ineligible).
+* PxMs are only eligible when GCP Partner Influenced Bookings Credit (Co-Sell) is awarded (all first line and higher managers are ineligible).
+* CEMs are eligible for payout based on sales VP approvals and within the maximum number of nominees; they will follow the FSM payout treatments.
+* Infra AI Sellers (Plan 3202) shall be guaranteed one nomination slot (not to exceed nominee limits) if a deal is considered Infra AI-led (defined as >=50% of a Commit/EA is reserved * for Infra AI via CUDs) and the Infra AI seller contributed meaningfully to closing the deal.
+Eligible Products
+* Standalone GDC Air Gapped (if it cannot draw down on a commit/EA)
+*3-year CUDs for the 1.1x multiplier (specific eligible products for this multiplier are not listed)
+*New and Expansion SCC subscription deals (only incremental ACV applies)
+*Infra AI deals (if considered Infra AI-led, defined as >=50% of a Commit/EA is reserved for Infra AI via CUDs)
+
+Count Of Win"This document serves as a guide for processing cases related to missing Count of Win (COW).
+Purpose: To define and outline the process for handling cases where a COW is missing, focusing on both Revenue COW and Bookings COW.
+What is a COW? It's a Cloud Sales term for new customers meeting predefined win conversion criteria, typically based on Annual Recurring Revenue (ARR) or Incremental Annual Contract Value (iACV).
+Eligibility and Criteria: Specific criteria vary by role and segment, as defined in the Plan Document. Key factors include Net-to-Google ARR/iACV, exclusion of paid trials and marketplace revenue, and additional review for wins generated via Revenue Pathways with Deal Acceleration Fund (DAF) grants.
+Attainment Calculation: Multipliers are not applied to ARR/ACV for COW calculation. Wins are calculated pre-split for accounts with revenue split agreements. Attainment is subject to review to ensure incremental GCP revenue.
+Quota and Account Changes: Each account has a maximum number of eligible wins. Prorated quotas apply for sellers starting after January 1, 2025. Win is granted to the account owner at the time criteria is met, with an exception for partial wins. Project ID and Billing ID movements are restricted if for the sole purpose of obtaining a COW without incremental revenue. Account type changes impact eligibility and attainment retroactively.
+Restrictions and Policies: Each Win counts only once per year. Wins can be removed if a backdated Chargeback results in criteria not being met. Attainment is capped. Splits on COW are generally not permitted, with specific rules for Global Accounts. Deals closed in the same quarter are consolidated.
+Termination or Transfer: Year-to-Date (YTD) attainment is paid out upon termination/transfer, and quota/attainment is not prorated in this scenario.
+Process (Revenue COW & Bookings COW): Both processes involve checking go/rainmaker for COW achievement, verifying seller mapping, checking for known seller issues, determining account type using go/p2pCOW or a SQL script, validating if the account crossed the 0.5 win threshold in 2024, and then checking revenue/iACV thresholds and seller attainment tables. It also includes steps for troubleshooting if COW is not flowing and checking for credits or watermarks that might affect revenue/iACV.
+Eligible Plans for COW in 2025: 1002, 1008, 1004, 1016, 1201, 1300, 3001, 3003, 8001, 9001.
+Max Wins: Max of 3 wins for Greenfield A accounts and 2 wins for Greenfield B accounts (at parent account level, child account level for Public Sector)."	Eligible Plans for COW in 2025: 1002, 1008, 1004, 1016, 1201, 1300, 3001, 3003, 8001, 9001.
+Security
+"This document is created to assist security specialists with inquiries and concerns about sales attainment and timely payments. It covers how to investigate discrepancies, provide explanations, and guide sellers on rectifying issues.
+MSSP Issue: This section details how to verify if a partner is an MSSP, check for correct deal flow to end customers, and use internal tools like Anaplan Incremental and various trix spreadsheets to confirm overrides and N/R/E (New/Renewal/Expansion) breakdowns. It also explains what to do if MSSP overrides are not found or if N/R/E values are zero, and how to determine seller eligibility.
+Other Products (UPS/BCE/SCC Premium/Chronicle): This part explains checking attainment flow in Vulcan and Anaplan Incrementals, and verifying deal details in AM. It also addresses issues with incorrect ACV for ramp deals and mentions that missing attainment for TBH accounts requires the seller to submit for open territory coverage, which is out of the SOP's scope.
+Mandiant Product: This section covers checking deal closure dates, verifying data flow in upstream tables, and using dashboards like `go/comp-validations` and Agreement Main. It also provides instructions for cases where deal details are not visible in AM, how to handle debooks or negative transactions, and notes on SKU eligibility (e.g., IRES is not eligible for attainment).
+Watermark: Mentions checking the watermark using a dashboard or script.
+Deal Split: Explains that security specialists are not eligible for in-year deal splits except for out-of-territory coverage, which is a manual process managed by managers, RSO, and Philip MacQuitty (FTE). It also details the updated Q2 2025 Split Program for Dom Delfino's organization, outlining new split capabilities for specialists, requirements for split submissions (e.g., filing a case in Vector using Cloud Concierge Helpdesk), and capacity limitations." The FY2025 Security Split Process outlines steps for in-year and LOA splits.
+Deal splits require email approvals from all impacted individuals before closure.
+A Split Tracker must be updated with split intentions and case links for closed deals.
+Minimum split amounts vary by region, ranging from $100k to $175k iACV.
+Sellers cannot receive more than 25% of their quota from splits."
+
+Watermarks represent the previous deal's booking amount, serving as a renewal benchmark.
+Watermarks are established at the Parent Account level in Vector.
+Each product in a renewed deal reduces the watermark group value.
+The Renewal Datamart (RDM) Request Form is used for watermark consolidation requests.
+Products outside a bundle's watermark group require manual watermark value additions."
+"Scenario & Example: Describes the specific business situation and a corresponding example.
+Assumption on how deal is booked: Explains the SKU or product family used for booking the deal.
+ERA: Details how the revenue from existing products (ERA - Existing Renewal Amount) is treated in the new deal.
+
+Watermark Treatment: Specifies how ""watermarks"" (likely related to baseline revenue or historical spend) are adjusted in the RDM (Revenue Data Model).
+Account Type Treatment: Indicates how the account type is updated based on the new deal.
+New, Renewal, Expansion: Categorizes the deal's value into new business, renewals, and expansions.
+Business Decision: Provides the rationale behind the specified treatments and adjustments.
+Sales Operations has approved for adjustments?: Indicates whether Sales Operations has approved any necessary adjustments for the scenario.
+Incremental revenue:The document, "2025 GCP Incrementality and GWS Subscription Watermark | Support Guide," provides a detailed overview of the concepts, calculations, and validation procedures for Watermarks and Baselines in the context of the FY25 sales compensation plan, specifically for Google Cloud Platform (GCP) and Google Workspace (GWS).
+
+Here is a summary of the core concepts:1. Watermark vs. Baseline
+Watermark (for Bookings/Subscriptions): A reference point, typically a prior level of spend or commitment, used to determine the Incremental Annual Contract Value (iACV) for new deals (like EAs, GCP Commits, and qualifying subscriptions).
+Formula: iACV = Net ACV - Watermark. Only the value above the watermark is eligible for bookings attainment.
+Baseline (for Incremental Revenue): An annual account hurdle based on prior Q4 spend that must be met before a seller receives Incremental Revenue attainment.
+General Formula: Baseline = (Q4 Parent Account Spend) * 4 * 70%. Only revenue above this amount counts toward the Incremental Revenue target.
+2. Watermark Calculation (for EAs and GCP Commits)
+
+The watermark is the MAX of two components, calculated at the Parent Account Level (with some exceptions):
+Component 1: Existing Spend (Prior Quarter ARR): Based on the Annualized Run Rate (ARR) from the last full quarter prior to the booking date. It is calculated as (Prior Quarter Sales Revenue * 4) and includes products like GCP Core, Looker, Apigee, etc.
+Channel Specificity: A key FY25 change dictates that some products (e.g., GCP Core) are Cross-Channel (prior spend from direct and reseller counts), while others (e.g., Workspace, Cloud-Security) are Channel-Specific (only prior spend from the same channel as the new deal counts).
+Marketplace Cap: Marketplace ARR contribution is capped at 25% of the total calculated watermark value.
+Component 2: Prior Opportunity ACV: The ACV of the most recent relevant prior EA/Commit opportunity tagged in the system.
+3. Workspace (GWS) Watermark Calculation
+
+This is an aggregated annual value for a child account, predicting the expected renewal value.
+Calculation: Sum of:
+ACV of expiring Commit contracts within the plan term.
+(Aggregate Flex bookings in Dec of prior year) * 12.
+Certain Term-Reset ACV adjustments.
+Incoming GWS bookings are compared against this aggregate watermark cumulatively (Residual Watermark concept).
+4. What is Not Eligible for Watermark
+AI Subscription Products (GenAI) and specific AI Bookings.
+Penalties and fees not related to product consumption.
+Standalone GCP Subscriptions (with exceptions).
+5. Watermark Validation Procedures and Dashboards
+
+The document outlines the standard operating procedure for validating watermarks using internal tools:
+| Status | Dashboard / Resource | Go Link | Purpose |
+| Closed Opportunities | LBBTracker (FY25 iACV Breakdown tab) | go/LBBTracker | Primary resource for the final iACV and a breakdown of the watermark composition. |
+| Open Opportunities | Watermark Estimation Dashboard | go/watermark-estimation | Used to estimate the watermark for deals in progress. |
+| GCP Watermark | GCP Watermark Vector Reporting | go/watermarkcalc | Looker BHI forecasting dashboard showing ARR, ACV, and attached opportunities. |
+| GWS Watermark | 2025 GWS Watermark and Incrementality | go/gws-iacv | Used to validate and check total GWS watermark. |
+| Overall Attainment | Rainmaker | go/Rainmaker | Displays the baseline, quota, and attainment for Incremental Revenue. |
+For a seller who believes the watermark is incorrect, they should work with their RSO (Revenue Operations) to submit a Watermark Override by filling out the go/watermark-override form. For compensation attainment, go/LBBTracker is the designated "Source of Truth" for closed deals.
+
+Public Sector Account Definitions
+PSSA is a unique contracting model primarily for US GPS customers, also used by international GPS sellers. Both PSSA and EA (Enterprise Agreement) are booked as GCP commits in Vector, with PSSA identified by a specific SKU. PSSA provides a fixed monthly bill for a set of products.
+"This document outlines the US Public Sector Accounts, including sales, quotas, and commission structures, and details issue categories and resolution steps for compensation and attainment.
+Purpose: To provide guidelines for the Cloud Sales Helpdesk to determine seller attainment eligibility in the US Public Sector.
+Public Sector Landscape: Dedicated focus on the US Public Sector due to a government mandate, requiring tailored sales strategies.
+Compensation Plans: Details component updates for Plans 2058, 1012, and 1011 from FY24 to FY25, and mentions Plans 3101 and 3112 for Security Specialists.
+Nuances for US Public Sector: Includes booking components, a special EA Public Sector bundle SKU, and an early booking accelerator modifier.
+Exceptions: Discusses specific rules for US Public Sector including booking and PSO bookings, quota caps, and accelerator applications.
+FAQ: Essential details needed to triage Google Workspace (GWS) cases (Domain Name, Subscription ID, Billing Account ID)."
+"This document, ""Public Sector Account Definitions,"" outlines the criteria for classifying accounts within the public sector, including government agencies, education and EdTech organizations, and other specific entities.
+
+Key definitions provided:
+Government Guidelines: Covers various government bodies, quasi-government entities, public research organizations, multilateral institutions, government-affiliated non-profits, entities using government procurement, and government systems integrators.
+Education & EdTech Accounts: Details definitions for higher education institutions (degree-awarding, departments, university-owned hospitals), K-12 institutions, organizations with educational domains, and EdTech companies.
+Coverage between Cloud EDU team & the EDU Focus Area (EDU FA): Explains the division of responsibilities for EDU accounts based on product focus (GCP vs. Workspace for Education).
+The document also includes:"
+
+
+Exception to Policy
+"CEC Process: Details the steps from opening a Cloud Helpdesk Case to the bi-monthly CEC meeting for decision-making.
+Account Tag Changes: Procedures for WorkSpace and Non-WorkSpace tag changes, noting when CEC approval is required.
+CEC Graveyard Account: Explains the policy for quota relief in graveyard accounts and the need for CEC exception.
+FAQ: Addresses common questions regarding when CEC approval is and is not required (e.g., not required for data quality, planning errors, system bugs, or internal process errors).
+CEC Implementation: Instructions for analysts on implementing approved CEC cases, including determining desired results, assessing impact on sales reps, deciding on attainment override types, and validation.
+Roles & Responsibilities: Outlines responsibilities for CTS Agents and Sales Comp Admin FTEs in routing and handling CEC cases."
+Form
+Template
+This document outlines the 2025 Comp Admin SPIFFs (sales performance incentive funds), which are commissions paid to sales representatives for meeting or exceeding sales goals. These SPIFFs do not count towards a Seller's overall OTV cap but may have their own payment caps.
+
+
+Marketplace Revenue
+
+1. Finding Marketplace Revenue (Documents [6] & [9])
+
+This guide is for Sales Comp Analysts to triage Marketplace Revenue cases from sellers, emphasizing that Marketplace revenue is complicated, so you shouldn't assume anything.
+
+Key Resources & Tools:
+Seller-Facing Dashboard: go/findisv (for sellers to identify attainable solutions).
+Installments Lookup: SalesComp Marketplace Installments Lookup and P2P Marketplace Prepaid Installments Revenue for prepaid installment details.
+Eligibility Lookup: Marketplace SKU eligibility Lookup to check SKU eligibility and solution names/IDs.
+Data Table: concord.service_doppler.cloud_revenue_sales_comp_dremel (SalesComp view of Doppler with marketplace-specific installment columns).
+Eligibility Check: google.GCP_MP_comp_eligible_listings (If a listing is not in this table, it is not eligible).
+Basic Triage Strategy: Immediately go upstream into Doppler, as this bypasses eligibility rules and 100% discounting edge cases.
+Top 5 Marketplace Revenue Misconceptions:
+Misconception: Always getting the full ACV of deals closed in 2025 for security partners (Palo Alto, Exabeam, Splunk, Wiz, Oracle).
+Reality: ACV only applies to installments with a duration greater than one year. Installments landing in future years are not attainable in the current year, and attainment only occurs when installments actually land (are invoiced).
+Misconception: Still getting prorated revenue for security partner deals closed in prior years.
+Reality: For these partners, sellers are rewarded for installment invoices that land in the current year (2025). Prior year deals with installments landing in 2025 are attainable.
+Misconception: Monthly prorated revenue is calculated by dividing the deal TCV by the months of the term.
+Reality: Deal TCV is never factored into proration. Proration is determined by a given installment's amount and duration (start and end dates) and is calculated at a daily rate.
+Misconception: Only a handful of ISV Partners can have discounts/credits.
+Reality: This is FALSE. More than 75% of marketplace SKUs in 2023 had some form of discount applied, and sellers are paid on net to Google.
+Misconception: Postpay marketplace deals will generate predictable monthly revenue.
+Reality: This is FALSE. Postpay is like GCP consumption against a commit, meaning revenue flows based on usage, and there can be months with no revenue.
+2. Finding Apigee Revenue (Document [7])
+
+This guide is for Sales Comp Analysts to triage Apigee revenue cases, noting that Apigee revenue is generally straightforward to find.
+
+Key Resources & Tools:
+Seller-Facing Document: 
+Order Lookups: Apigee Orders - SAP/AM Ready (go/p2p-apigee-revenue) and Agreement Main (great replacement for vanilla).
+Triage Case Link: Go/p2p-di-issue for opening a case with the DI team.
+Most Useful Triage Info: The Vanilla/Oracle/SAP Order Number.
+Top 5 Apigee Revenue Misconceptions:
+Misconception: Apigee revenue is consumption revenue.
+Reality: It is NOT consumption revenue (except for PAYGO SKUs). Revenue is dictated by Google revenue recognition rules, requiring a signed contract with order information entered into the system and the product to be provisioned.
+Misconception: Apigee monthly revenue equals the TCV of the order form divided by the min start and max end date of the deal.
+Reality: Monthly revenue is based on the order form and the SKUs active in the current timeframe, subject to the provisioning date. Ramped deals result in ramped revenue.
+Misconception: Start dates on the order form dictate when revenue will start.
+Reality: Revenue proration start is ALWAYS dictated by the provisioning date, which is not on the order form but signals that the customer is using the service.
+Misconception: Revenue can appear in prior months after booking or contract signing.
+Reality: No revenue will appear in past/closed months. If the provisioning date is backdated, a surge in revenue may occur in the first month it flows into Doppler to account for the "missed" revenue.
+Misconception: Apigee invoice amount/schedule dictates revenue amount and/or start.
+Reality: Invoice activity/amounts are not relevant to subscription revenue. Revenue amounts are dictated by Google revenue recognition rules per the order form details and provisioning date.
+3. Finding Looker Revenue (Document [8])
+
+This guide helps Sales Comp Analysts triage Looker revenue cases, accumulating knowledge from multiple years of issue resolution.
+
+Key Resources & Tools:
+Billing Lookup: Looker Billing Accounts From Concord Subs (to find billing accounts by account name) and Billing Explorer (go/bex).
+Triage Case Link: go/p2p-di-issue for opening a case (must provide the Looker order form).
+Order Lookups: Cloud Orders Reporting Dashboard and Agreement Main Dashboard.
+Most Important Triage Info: The Looker Order Form.
+Key Things to Remember:
+Invoicing: Looker deals invoiced from Looker Paper (before April 1, 2021) will not see revenue from those invoices. Invoices are generally not helpful for calculating expected revenue, only for identifying that Looker is in use or getting a billing account ID.
+Revenue Predictability: Revenue is generally predictable but can flow unexpectedly (often too quickly) due to billing errors or subscription billing account moves. The monthly ratable revenue is just a guide, not a rule.
+TCV is not Proration Basis: Determining monthly revenue by dividing Booking TCV by the term is often inaccurate. Check the order form for skus with later start dates.
+Consumption: Looker revenue is NOT consumption.
+Discounts: Subscription revenue is reduced by discounts, and a fully discounted subscription (e.g., from GCP credits) will show no revenue in Doppler.
+4. 2024 Google Cloud Marketplace Policy (Document [10])
+
+This policy provides the requirements and governance around Google Cloud Marketplace, intended to guide sales, customer-facing, and partner-facing employees.
+
+Key Policy Statements:
+Terms of Service (TOS) and EULA: The purchase of 3rd party products is governed by the non-negotiable Marketplace Terms of Service (between Google and customer) and the applicable Vendor EULA (between vendor and customer).
+Resale of Marketplace Offerings: Google Cloud Resellers with a Google Cloud Sell Authorization can resell select ISV offerings. Reseller purchases are governed by the Marketplace Reseller Terms of Service.
+Revenue Share: Google Cloud retains a revenue share, typically 3%, for the majority of eligible 3P Marketplace offerings. Any requests to adjust or remove this revenue share for individual transactions will be denied.
+Customer Commit Drawdown: 3rd party Marketplace spend shall drawdown the customer’s commit at a specified rate (currently 100% if deployed on GCP), subject to a cap of 25% of the customer’s Google Cloud commit for agreements using v3.0+ of the pricing addenda. Transactions found to be non-compliant with Marketplace listing requirements shall not drawdown customer commitments.
+Customer GCP Credits: Customers can use Customer GCP Credits (CGC) for 3P Marketplace purchases, and the transaction is still eligible for commit drawdown and sales compensation.
+
+Debook/ Rebook
+
+The Standard Operating Procedure (SOP) is designed to investigate and resolve discrepancies in seller attainment and payment calculations caused by debook and rebook transactions or underlying system issues.
+Purpose: To identify the root cause of attainment and payment discrepancies stemming from debook/rebook transactions and to determine the correct corrective action in relevant systems.
+Scope: The procedure applies to analyzing booking data (specifically debook and rebook transactions) across systems like Enhanced Agreement Main (EAM), Renewal Data Mart (RDM), and Incremental Bookings Layer (IBL). The analysis covers their impact on Annual Contract Value (ACV), Total Contract Value (TCV), Watermarks, and ultimately, seller attainment.
+Key Issues Addressed: The SOP focuses on issues like incorrect booking dates, inconsistent TCV/ACV, timing mismatches between debooks and rebooks across fiscal periods, missing cancellation records, and account mapping errors.
+Triage and Resolution Steps
+
+The analysis and corrective process is broken down into a multi-step procedure to diagnose the root cause, followed by a set of resolution steps based on the findings.I. Analysis Procedure (Triage Steps)
+Gather Initial Information: Collect details on the discrepancy, including the Account ID, Order ID, product, relevant dates/transactions, and the observed issue (e.g., attainment overstated/understated).
+Extract Data: Pull data for the relevant account/order and time period from key systems:
+Renewal Data Mart (RDM): For watermark data.
+Enhanced Agreement Main (EAM): For all relevant booking data.
+Incremental Bookings Layer (IBL): For data consumed by the payment system.
+Perform Initial Data Alignment & Comparison:
+Compare total booking amounts (TCV, ACV, NRE) across EAM and IBL to check for data flow issues.
+Compare EAM totals against RDM watermark totals for the relevant fiscal year(s).
+Analyze Transactions (Debooks/Rebooks):
+Filter EAM data to identify negative (debook) and positive (rebook) transactions.
+Check if debook and rebook dates and amounts align (ideally same date, offsetting amounts).
+Look for patterns like large debooks or timing differences across reporting periods.
+Drill Down into Order Details:
+Examine detailed lines in EAM using Order ID or Agreement ID.
+Check Start Date, End Date, and the Cancellation Reason for debooked orders (may require looking up in SAP if fully canceled).
+Investigate ACV Calculation: Review if ACV is prorated correctly over the remaining service term versus the original total contract term, as incorrect proration leads to misstatements.
+Analyze Watermark Impact: Check which orders contribute to the account's watermark and investigate if early renewals are causing misalignment between the booking date/attainment period and the expected watermark timing.
+II. Resolution Steps
+
+Based on the identified root cause, the corrective action is prioritized as follows:
+Prioritize Source System Correction (Order Management/SAP):
+Required for TCV errors or fundamental data errors on active orders, as this ensures correct invoicing.
+Also for wrong booking dates on new orders.
+Correct in EAM (Booking Date Overrides):
+Used if source correction is not feasible (e.g., historical booking date issues, or if source changes won't reflect downstream correctly/timely).
+Requires proper documentation, rationale, and approvals (Finance/Policy).
+Manual Overrides in Payment Layer:
+Required for issues impacting closed fiscal periods (e.g., prior year attainment) since system changes in EAM will not retroactively fix past attainment.
+Requires documenting the adjustment amount and obtaining necessary approvals.
+Address System Gaps/Policy Alignment: Communicate cases that highlight system limitations (like ACV proration logic or early renewal watermark handling) to relevant system/policy owners for future enhancements.
+Communication: Inform all relevant stakeholders (sales, sales operations, finance, system teams) of the findings and the chosen resolution path.
+
+SAP
+
+Summary of SAP Rise Revenue SOP
+
+1. Attainment Reporting Change (FY25 Challenge)
+2024: SAP Rise revenue was tracked under a separate product group, not eligible for COW attainment.
+2025: SAP Rise revenue was merged under the regular GCP Revenue product category and is eligible to contribute toward COW attainment.
+Challenge: Sales plan participants lost the ability to track SAP Rise revenue separately, increasing the likelihood of reaching out to the Comp Admin Team for attainment confirmation.
+2. SAP Rise Process Flow
+
+The flow describes how SAP Rise revenue is processed from contract to the incremental booking table:
+Google Customers sign a contract directly with SAP.
+Google Sales Team creates the SAP Rise opportunity in Vector.
+Upon consumption, SAP creates and shares unique project IDs with Dinesh Vandayar.
+Dinesh Vandayar and Rohit Kamath organize a table mapping SAP Rise projects to Vector opportunities and customer accounts.
+The Project ID mapping table feeds Doopler, which maps SAP Rise Revenue transactions to the proper end customer accounts.
+All SAP Rise Revenue transactions flow from Doopler into the Incremental Table as regular GCP Revenue, using the billing subaccount ID: 009815-B8E942-9A37D8.
+3. General Data Flow
+
+The overall data flow for checking SAP Rise transactions is:
+
+SAP Project to Customer Account mapping Table → Doopler Revenue Table → Incremental Booking Table → Attainment Table → Rainmaker
+Triage/Troubleshooting Steps for SAP Rise Helpdesk Cases
+
+When troubleshooting an SAP Rise helpdesk case, the following steps and contacts should be used:
+Check SAP Project to Customer Account mapping Table:
+Purpose: Confirm if the project ID was provided by SAP and is aligned to the customer.
+Action for Missing Mapping: If the project ID to customer account mapping is missing, reach out to Rohit Kamath.
+Query Doopler Table (If mapping exists):
+Purpose: Confirm that the SAP Rise Revenue is properly aligned to the corresponding customer account.
+Action for Incorrect/Missing Alignment: If the alignment is incorrect or missing in the Doopler Table, reach out to Rohit Kamath to report the issue.
+Check Incremental Table (If Doopler alignment is correct):
+Purpose: Check if the revenue has flowed from Doopler into the Incremental Table.
+Action for Missing Incremental Data: If SAP Rise revenue is properly aligned in the Doopler Table but is missing in the Incremental Table, raise a bug with Brian Stephens to address this issue.
+
+
+Missing Attainment
+The document serves as a guide to understanding and addressing discrepancies in sales attainment, which is tracked in the Rainmaker system.
+
+Key Points on Attainment Discrepancies:
+Categories: Missing attainment can be related to three main categories: Revenue, Booking/Subscription, and CoW (Count of Win).
+Importance: Regularly reviewing attainment is crucial, as occasional discrepancies can occur despite systems being designed for precision.
+Examples: The document provides simplified examples of missing attainment, including:
+Partial attainment on a booked deal despite contract confirmation.
+Over-attainment leading to concerns about clawback.
+No CoW reflected for a complex deal that should be eligible.
+Inability to view attainment for a renewing deal.
+Analysis Outcomes: After raising a case, the analysis can result in three outcomes:
+Outcome 1 - Attainment is accurate: The attainment is correct based on Compensation Terms & Conditions (T&Cs), comp plan thresholds, or other restrictions.
+Outcome 2 - Attainment is not accurate but fixable: An identifiable discrepancy is found and can be resolved quickly (e.g., moving a Billing ID, adjusting Account ownership).
+Outcome 3 - Attainment is not accurate and could take time: System bugs or complex technical issues are involved, requiring collaboration with other teams (Eng, Comp Admin, OMPF, Legal, etc.), with resolution times ranging from days to months.
+Analysis Process: The team conducts a thorough analysis, reviewing T&Cs, individual comp plan(s), quotas, and deal details like contract dates and closed-won dates in Vector.
+Leave of Absence Note: For compensation questions related to a leave of absence (e.g., Maternity, Baby Bonding, Carer’s leave), users are directed to visit go/benefits and submit a support ticket under the "Benefits" and "Time & Leave" help categories, rather than opening a case in Vector.
+Triaging Steps for Assistance
+
+The document outlines separate steps based on the type of issue:Need Assistance with Missing Attainment
+
+If your question or concern is about the attainment reflected in Rainmaker:
+Create a Cloud Helpdesk case in Vector (refer to instructions).
+Type ‘Missing attainment’ to describe your issue.
+Click ‘Next’ and follow the prompts to complete the process.
+Alternatively, you can contact your manager.
+Compensation-Related Issues
+
+If your concern is related to commissions, payouts, or paychecks (Sales Bonus):
+Create a Cloud Helpdesk case in Vector (refer to instructions).
+Type ‘Compensation issue’ to describe your issue.
+Click ‘Next’ and follow the prompts to complete the process.
+The team will transfer the case to a dedicated Comp Admin representative who will handle the issue directly.
+
+
+H2'25: Mandiant Consulting ACV - SMB Security
+This document summarizes the changes to the Mandiant Consulting Services Component for SMB Security Specialists (Plan 6060) effective for the H2’25 Sales Period.
+
+Key Changes:
+Renewal Bookings are now eligible for sales attainment. Previously, only New and Expansion bookings were credited.
+New State (H2’25): SMB Security Specialists are compensated for ALL booking types (New, Expansion, and Renewal) based on full Annual Contract Value (ACV).
+Business Rationale:
+The change is intended to incentivize SMB Security Specialists to actively support Mandiant Consulting renewals and ensure customer retention.
+This addresses the problem of having no dedicated Mandiant Consulting Renewals Specialists on the SMB team, which had resulted in high churn and contraction rates for Mandiant Consulting Retainers.
+Attainment Calculation:
+Attainment is calculated based on the total ACV multiplied by the applicable multiplier.
+Formula: Attainment = (New Booking Amount + Expansion Booking Amount + Renewal Booking Amount) * Applicable Multiplier
+| Product Group | Eligible Booking Types | Multiplier |
+| Mandiant Consulting Non-Prepaid T&M | New + Expansion + Renewal | 0.8x |
+| Mandiant Consulting EOD & IRR | New + Expansion + Renewal | 1.0x |
+| Mandiant Consulting Services | New + Expansion + Renewal | 1.0x |
+
+
+
+Marketplace Revenue & BMoD
+This SOP, "Compensation/Attainment Help | Marketplace Revenue & BMoD," is a guide intended to help Sales Comp Analysts triage complicated Marketplace Revenue cases from sellers. The overarching principle is to "not assume anything" due to the complexity of marketplace revenue.1. Scope and Purpose
+Intended Audience: Sales Comp Analysts.
+Objective: To provide a simplified, easy-to-understand guide for triaging Marketplace Revenue cases.
+Complicated Situations Covered:
+Questions about proration for ISV Partners and upfront payments for Special Treatment Partners (Oracle, Palo Alto, Exabeam, Splunk, Wiz).
+Questions about proration for deals amended in 2023-24.
+Inquiries regarding the 0.5x Multiplier and the 25% quota cap.
+Questions on the $5M attainment cap towards each ISV + Partner combination.
+Inquiries regarding prepaid proration on marketplace deals.
+Questions about Marketplace BMOD Effecting GCP Core.
+2. Understanding Prepaid vs. Postpaid
+| Deal Type | Identification | Key Characteristics |
+| Prepaid Deals | prepay_flag = "Prepay" in Doppler. Best isolated by subscription_id. | Subject to proration and special treatment on installments. Installments drive proration. Proration is calculated daily. Amendments create new offers, preserving the proration of prior installments. TCV divided by term calculation is only for single-installment deals. |
+| Postpaid Deals | N/A | Similar to consumption revenue. Revenue flows based on actual usage, not a fixed prorated amount. Monthly revenue can vary (even zero). Sellers should not perform TCV divided by term calculations. |
+3. Triaging Steps (Procedure)
+
+The procedure focuses on identifying the deal type and finding the relevant data using the subscription_id for prepaid deals.
+
+A. If the Revenue Exists:
+Get Unique ID: Obtain a unique booking id (order id in Rainmaker).
+Determine Deal Type: Is the deal prepaid or postpaid?
+Postpaid: You can stop now as this is like consumption.
+If Prepaid:
+Get Subscription ID: Obtain the subscription id.
+Run Query: Run the "basic prepaid marketplace revenue query" in Doppler Only scripts.
+Check Details: Review installment details, discounts, etc.
+Check Eligibility: Is the SKU eligible in 2025?
+B. If you Can't Find the Revenue:
+Check Opportunity: Is there an opportunity for the marketplace deal?
+Determine Deal Type: Is it prepaid or postpaid?
+Identify Account: What is the billing account used?
+Tip: You can run the basic marketplace query by vector account or billing account to see everything.
+Check Partner/Start Date: What is the ISV Partner and when is the deal supposed to have started?
+Special Partners Check: Is it Oracle, Wiz, PANW, Splunk, or Exabeam?
+Note: No prorated revenue in 2024 from any deal for these special treatment partners.
+Manual Program | SMB [Small Medium Business]
+
+The Standard Operating Procedure (SOP) is a detailed guide for the Manual Program | SMB (Small Medium Business) team, designed to standardize and govern the process for investigating and resolving compensation and attainment issues related to sales deals.
+
+The document is structured into five main sections that guide the user from initial case receipt to final resolution:SOP Summary
+Primary Focus: Troubleshooting compensation and attainment cases for the SMB segment, primarily for Google Workspace (GWS) and Google Cloud Platform (GCP) deals.
+Key Information:
+Case Triage: Initial validation steps to ensure the case belongs to the correct queue and has all necessary information.
+Investigation Workflows (Section 2.0): Provides distinct, step-by-step procedures for investigating issues based on the deal type:
+Google Workspace (GWS) Deals: Involves running Cockpit and GCC Bookings queries, triaging based on sales_status, and troubleshooting "Not Won" deals (e.g., User Increase, Upsell, Enterprise Deals).
+Google Cloud Platform (GCP) Deals: Focuses on checking Rainmaker for attainment, running eligibility scripts, and checking for Count of Wins (CoW) issues.
+Security & Looker Deals: Has a separate triage and investigation step.
+Advanced Troubleshooting & FAQs: Covers complex topics like GCP attainment troubleshooting, handling seller objections, and understanding system status/data timelines.
+Resolution Actions: Details the process for formally Submitting an Exception for eligible deals that were not automatically attained due to system issues.
+Universal Case Triage Steps (Section 1.0)
+
+This is the initial validation process that must be performed for all compensation cases before proceeding to the deal-specific investigation workflows.1. Confirm Case Validity
+Verify SMB Account:
+Check in Vector that the Account Segment is SMB.
+Confirm the seller's manager is under Sharon Prosser's hierarchy (this applies only to FTEs, not vendors).
+Review Case Requirements:
+Ensure the Issue Category & Sub-Category are correct for Compensation/Attainment (e.g., "Missing Attainment").
+Confirm the case has a clear Case Description and a valid Opportunity ID (the primary key for investigation).
+Identify the Affected Person (as managers often file on behalf of team members).
+2. Handle Triage Failures
+Case is NOT an SMB Compensation issue:
+Edit the case to fix the issue type/category, add a note, and re-route the case to the correct queue (e.g., Billing, Sales Ops).
+Rep is SMB but the account moved to Corporate/Enterprise:
+This is not an SMB compensation issue. Notify the Queue Manager to re-route the case to the appropriate team.
+Critical details are missing (e.g., Opportunity ID):
+Send the Canned Response (CR) requesting the missing information.
+Set the case status to "Waiting on Customer Action" (WOCA) to pause the service-level agreement (SLA).
+Send 3 follow-up reminders over the next three days if there is no response after 24 hours.
+Close the case on the 5th day if no details are provided.
+
+
+
+BHI
+
+This document serves as an Standard Operating Procedure (SOP) to clarify the distinct purposes of the BHI (Business Health & Insights) Dashboard and the Rainmaker Dashboard, and to guide sellers in triaging and resolving common revenue and attainment discrepancies.
+
+The Core Difference:
+BHI (Business Health & Insights) Dashboard: This is a forecasting tool that provides a high-level, company-wide view. It shows All sales revenue, including credits, discounts, and revenue from products that may not be eligible for a personal compensation plan. It is for overall business performance and planning.
+Rainmaker Dashboard: This is the single source of truth for personal compensation and attainment. It shows Attainable revenue, which is the specific figure calculated based on an individual's compensation plan, reflecting the "Net to Google" revenue that counts toward personal goals and payout.
+The main takeaway is that Rainmaker should always be trusted for personal attainment and payout, as BHI is a broader directional and forecasting tool.Detailed Triaging Steps for Common Issues
+
+The document outlines three main issues and the corresponding steps for resolution:1. Missing Revenue or Attainment
+
+This occurs when a seller sees a revenue number in BHI but a lower number, or zero, in Rainmaker.
+| Step | Action | Root Cause Addressed |
+| 1. Wait for Latency | First, wait 48-72 hours after the deal closes or the system refreshes. | Data Latency: Data propagation time from upstream tables to Rainmaker. |
+| 2. Review Compensation Plan | Review your compensation plan to confirm which products and deal types are eligible for attainment (e.g., PAYG, new/expansion deals, specific SKUs). Check SKU eligibility at go/cloudhierarchy. | Ineligible Revenue: The revenue in BHI is not eligible for compensation in Rainmaker. |
+| 3. Raise a HelpDesk Case | If the issue persists after waiting and reviewing your plan, raise a HelpDesk case at go/gtm-helpdesk to investigate the discrepancy. | System Bugs: Issues that require the engineering team to resolve. |
+2. Missing Count of Wins (CoW)
+
+This occurs when a seller expects a CoW to be recognized but it's not showing up.
+| Step | Action | Root Cause Addressed |
+| 1. Confirm Account Classification | Confirm the account's classification (e.g., Greenfield vs. Spender) and its mapping dates to your Named Account List (NAL). | Account Eligibility / Incorrect Mapping: The account type is not eligible for CoW under your plan, or the NAL mapping was incorrect/late. |
+| 2. Check Revenue Threshold | Check Rainmaker to ensure the revenue meets the exact threshold required by your compensation plan (e.g., $15K or $37.5K). | Unmet Thresholds: BHI may include revenue types that don't count towards the CoW threshold in Rainmaker. |
+| 3. Raise a HelpDesk Case | If all criteria are confirmed to be met, raise a HelpDesk case at go/gtm-helpdesk. | Persisting eligibility or mapping issues. |
+3. Discrepancy Between Rainmaker & BHI
+
+This is about understanding why the numbers are different, often believing BHI is the source of truth.
+| Step | Action | Root Cause Addressed |
+| 1. Primary Rule | Remember: Rainmaker is the source of truth. Always refer to Rainmaker for attainment and quota. | Different Purposes: BHI is for forecasting; Rainmaker is for compensation. |
+| 2. Report a Bug (If Concerned) | If you are concerned about the size of the discrepancy, report a bug to the Central BI team at go/ask-central-bi. The GTM Helpdesk team does not troubleshoot BHI-related issues. | Out-of-Scope Revenue: BHI includes revenue not eligible for attainment under your plan. |
+When to Engage Cloud Billing Support (CBS)
+
+Contact the Cloud Billing Team when your issue is related to specific billing transactions or customer consumption data flow.
+| Issue | Action |
+| General Billing Questions | For viewing pricing/usage, managing billing accounts, or resolving payment issues. |
+| Customer Consumption | To investigate why a customer's consumption data is not flowing correctly. |
+| Raising a Case (Consumption Tracking) | Go to Vector, select Cloud Help Desk, choose CSO Support Requests, then the category Consumption Tracking. Be aware that the BHI Commit dashboard is an estimate and may exclude certain invoices (OES subscriptions, Marketplace purchases). |
+
+
+Quota Issues
+
+This document serves as a guide for sellers experiencing discrepancies or having questions about their sales quotas. It establishes that the Rainmaker system is the official source of truth for quotas, which represent sales targets and are crucial for compensation.
+
+Key Points:
+Quota Adjustments: Cloud leadership may adjust quotas mid-year, often due to shifting priorities like a new focus on AI.
+Helpdesk Role: The Cloud GTM Helpdesk team can analyze account activity to help understand quota changes but cannot directly assign, modify, or override quotas. All adjustments require approval from the Comp Exception Committee (CEC).
+Common Quota-Affecting Factors: These include data quality or non-data quality moves (like account reassignments or mergers), account and territory changes, new product launches, account graduation/segmentation, proration/seasonality, and approved exceptions.
+Possible Outcomes After Analysis:
+Quota is accurate: Confirmed correct, often due to data/non-data quality moves.
+Quota is inaccurate but fixable: A discrepancy is found, and a path to resolution (potentially raising an exception) is recommended.
+System Bug: A rare instance where a system bug affects the quota, requiring collaboration with other teams (Eng, Comp Admin, etc.).
+Generic Timelines:
+Analysis for issues stemming from data/non-data quality moves is expected within 72 hours.
+Resolution for a system bug can range from days up to weeks.
+Downward quota adjustments via a CEC case may take up to several weeks to review and adjust if approved.
+Detailed Triaging and Assistance Steps
+
+For most quota issues, the primary triaging step involves creating a case in the Cloud Helpdesk.1. General Quota Discrepancies, Questions, or Adjustment Requests
+
+Follow these steps to get assistance with understanding your assigned quota, changes to your quota, or issues following sales data moves:
+Create a Cloud Helpdesk case in Vector (see instructions).
+Type ‘Quota Issue’ to describe your concern.
+Click ‘Next’ and follow the prompts to complete the process.
+2. Downward Quota Adjustment Requests (CEC Cases)
+
+Sellers seeking a downward quota adjustment must submit a Commission Exception Committee (CEC) case:
+Submit a case to the CEC.
+The request will only be considered if the material impact on the Sales Bonus payment is greater than $10,000 USD or 10% of the annual OTV.
+You must obtain approvals from the VP/Dir and the Regional Sales Operations Leader.
+3. Manager Requests for Team Quota Information
+
+For FSMs or Overlay Managers seeking quota information for their team:
+Create a Cloud Helpdesk case in Vector.
+Type ‘Quota Issue’ to describe the issue.
+Click ‘Next’ and follow the prompts.
+4. Quota Discrepancies Between Rainmaker and Plan Letter
+
+If you find a difference between your Plan Letter and Rainmaker:
+Rainmaker is the official and most up-to-date source of truth.
+Contact your FSM or regional RSO for assistance regarding your Plan Letter (go/myRSO).
+If you still have questions, follow the general triaging steps in Section 1.
+5. Partner Account Quotas
+
+Issues related to Partner roles and accounts are outside the Cloud GTM Helpdesk's scope:
+Create a Cloud Helpdesk case in Vector.
+Type ‘Partner Sales Comp Support’ to describe your issue.
+Click ‘Next’ and follow the prompts.
+
+
+
+=== DOCUMENT: Terms_Conditions ===
+
+
+
+=== DOCUMENT: Plan_Summary ===
+The provided documents consist of the 2025 Cloud General Incentive Compensation Terms & Conditions (Ts & Cs), the 2025 Cloud SMB Sales Policy, and the Vector Account Governance and SPIFF Playbook.
+
+Here is a summary of the key policies and topics covered:1. 2025 Cloud General Incentive Compensation Terms & Conditions (Ts & Cs)
+
+This document serves as the overarching guide for incentive compensation for Cloud Sellers in 2025.
+
+Key Sections:
+Policy Statements: Covers essential topics like At-Will Employment, Confidentiality, Seller Eligibility, Ethics and Compliance, and the Cloud Audit and Assurance Policy.
+Plan Details: Outlines the Sales Compensation structure, including Sales Bonus, Sales Acceleration Bonus, Draws, Special Performance Incentive Funds (SPIFFs), OTV Cap, Chargebacks, Sales Bonus Payment and Timing, and the Windfall Policy.
+Seller Events: Details how sales compensation is handled for events like new hires (Nooglers), Role Changes, Promotions, Leaves, Rotations, Transfers, and Termination of Employment.
+Territory, Account and Quota Assignment: Defines policies for Territory Assignment, Account Assignment, Quota Assignment, and specifies the Source of Truth for these assignments.
+Attainment Components: Provides detailed rules for calculating attainment based on Revenue (including PSSA, Incremental Revenue, and iACV for Subscription), Bookings (including iACV for EAs and GCP Commits), and other components like Mandiant Consulting, PSO and Learning Services, Back-to-Back (B2B), SAP, Workspace Bookings/Watermark/Term Reset, Large Bookings Bonus, and Management By Objectives (MBO).
+In-Year Policies: Describes the processes for In-Year Changes, including those related to Data Quality (e.g., Account Merge, Hierarchy Changes) and Non-Data Quality (e.g., M&As, Account Type Changes, Account Movement for various FSRs and segments), and In-Year Splits. It also covers policies for handling Sales Bonus Disputes.
+2. 2025 Cloud SMB Sales Policy (Supplemental to Ts & Cs)
+
+This policy specifically outlines rules for the Small and Medium Business (SMB) sales teams for Workspace, GCP New Biz, BI Sales & CE, and Security Sales & CE.
+
+Key Rules:
+Segmentation: The SMB sales team focuses on accounts not included in Field segments, categorized into six geographic regions and further divided by sub-regions/countries and seat segments.
+SMB Workspace NB (New Business): Sellers own new Workspace accounts ("Net New Accounts") and accounts they closed from the last two performance cycles ("Following Two Quarter Accounts"). Territories are based on location, seats, and opportunity source.
+Attainment: Granted once a GWS Core SKU is paid. Individual contributor FTEs do not receive attainment for accounts with less than 50 paid seats, with exceptions for the "10x Proof of Concept."
+SMB Workspace AM (Account Management): Sellers own existing Workspace SMB accounts ("AM Core Accounts") and focus on upselling to SKUs with a higher list price.
+Attainment: Calculated based on "Incremental ARR" (Annual Recurring Revenue) at the domain level. User Increase opportunities must meet a threshold of >= 10% of the account's seats with a 10 seat minimum for incremental seats.
+Territory Movement: If an SMB account moves outside a rep's seat segment by +/- 50 seats, it should be passed to the appropriate rep. Specific exceptions are detailed for Proof of Concept and Rapid Growth Accounts.
+Salesforce Requirements: Strict requirements are set for SFDC opportunities (activities, creation date, uniqueness, and "Closed Won" stage) to be eligible for attainment.
+Attainment Amount: Credit is based on Incremental ARR. A 1.25x multiplier applies for AM upgrades (moving to a higher list price core GWS SKU or Business to Enterprise SKU family) for non-PDLs.
+3. Vector Account Governance: Account Changes
+
+This document details the updated rules for changing account names and addresses in the Vector system to improve data accuracy.
+
+Key Change Categories:
+Allowed: Changes matching the legal name/address, alignment with first-party (1P) and third-party (3P) resources without creating duplicates, and cosmetic changes (spelling, adding "LLC," local language names).
+Restricted (Manual Review Required): Changes when a duplicate account already exists (merging via Destiny is recommended), "Doing Business As" (DBA) name changes, and all other changes.
+Legal Name/Address Changes: Manual review is always required, and they are restricted if the current field account owner rejects the request, or if the seller fails to provide valid proof (D&B, Crunchbase, etc.), or if a duplicate account is found.
+4. SPIFF Playbook
+
+This playbook defines the use, governance, and process for Special Performance Incentive Funds (SPIFFs).
+
+Key Principles:
+Definition: SPIFFs are special incentives to drive incremental performance above the existing compensation plan, based on objective metrics.
+Use Cases: Used for driving specific strategy adjustments, increasing focus on an element not in the core plan, and global strategic initiatives.
+Not for: Driving performance on a metric already compensated, increasing focus on a product subset, using excess budget, spot bonuses, or replacing strong management.
+Governance:
+Must be Objective, Necessary, Executable, and Supported & Funded (VP+ support and earmarked budget).
+Limit of 3 concurrent SPIFFs for FSRs/CEs (2 in Q1) and 1 concurrent SPIFF for other roles (SMB, Partner Roles, Specialists).
+Process: Requires a formal proposal submission, review (at the latest 3 weeks prior to the start of the quarter), finalization of details, and approval. Payout must align with the quarterly cycle (approximately 60 days following quarter end).
+Non-Compensatory Levers: Other methods for driving behavior, like gamifying without monetary reward, OKR metrics, and public recognition, are encouraged. Sales competitions without monetary or in-kind rewards are limited to 2 contests per role, per quarter.
+
+
+
+
+=== SPREADSHEET: Do_Not_Contact_Data ===
+

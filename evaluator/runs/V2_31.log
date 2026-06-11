@@ -1,0 +1,60 @@
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Resource has been exhausted (e.g. check quota).', 'status': 'RESOURCE_EXHAUSTED'}}
+[V2_31] 120 cases × ['TTR', 'Reopen', 'Escalation', 'DSAT'] × 5 runs (temp 0.0, agent4 pinned)
+  (regen_concurrency=24, match_concurrency=20)
+  run 1/5: TTR 30.4%(n69)  Reopen 16.7%(n54)  Escalation 26.3%(n19)  DSAT 14.3%(n7)  | OVERALL 24.2%(n149)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+  run 2/5: TTR 30.4%(n69)  Reopen 14.8%(n54)  Escalation 21.1%(n19)  DSAT 14.3%(n7)  | OVERALL 22.8%(n149)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+  run 3/5: TTR 27.5%(n69)  Reopen 16.7%(n54)  Escalation 21.1%(n19)  DSAT 0.0%(n7)  | OVERALL 21.5%(n149)
+ERROR:regen: Agent 4 Failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Resource has been exhausted (e.g. check quota).', 'status': 'RESOURCE_EXHAUSTED'}}
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Resource has been exhausted (e.g. check quota).', 'status': 'RESOURCE_EXHAUSTED'}}
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+  run 4/5: TTR 26.1%(n69)  Reopen 13.0%(n54)  Escalation 21.1%(n19)  DSAT 14.3%(n7)  | OVERALL 20.1%(n149)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+ERROR:regen: Agent 4 Failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Resource has been exhausted (e.g. check quota).', 'status': 'RESOURCE_EXHAUSTED'}}
+[V2_31] 120 cases × ['TTR', 'Reopen', 'Escalation', 'DSAT'] × 5 runs (temp 0.0, agent4 pinned)
+  (regen_concurrency=16, match_concurrency=16)
+[resume] 4 run(s) already in ab_V2_31_2026-06-05T10-25-56Z.json; running 1 more.
+  run 5/5: TTR 30.4%(n69)  Reopen 18.5%(n54)  Escalation 15.8%(n19)  DSAT 14.3%(n7)  | OVERALL 23.5%(n149)
+
+=== [V2_31] accuracy (mean ± 95% CI, n=5, bot=gemini-3.1-pro-preview) ===
+  TTR         29.0% ± 2.5  (sd 2.0; n≈69; runs [30.4, 30.4, 27.5, 26.1, 30.4])
+  Reopen      15.9% ± 2.6  (sd 2.1; n≈54; runs [16.7, 14.8, 16.7, 13.0, 18.5])
+  Escalation  21.1% ± 4.6  (sd 3.7; n≈19; runs [26.3, 21.1, 21.1, 21.1, 15.8])
+  DSAT        11.4% ± 7.9  (sd 6.4; n≈7; runs [14.3, 14.3, 0.0, 14.3, 14.3])
+  OVERALL     22.4% ± 2.0  (sd 1.6; n≈149; runs [24.2, 22.8, 21.5, 20.1, 23.5])
+
+wrote evaluator/runs/ab_V2_31_2026-06-05T10-25-56Z.json

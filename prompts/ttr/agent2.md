@@ -27,6 +27,9 @@ agent: agent2
    3. **"Complex Processes"** (Category: Workflow Complexities)
    - **MATCH IF:** Case involves Multiple Requests or PPR disagreements requiring FTE.
 
+   3a. **"Quarter Freeze / YoY Planning & Implementation"** (Category: Workflow Complexities)
+   - **MATCH IF:** The transcript or case history **explicitly cites** a quarter-end / quarter-close freeze, intake-freeze window, or YoY planning/implementation blackout as the cause of the delay. **DO NOT** infer from a generic delay, backlog, PPR/PPH, or "complex process" — there must be an **explicit freeze/blackout reference**. If unsure, use **"Complex Processes"**.
+
    4. **"Bulk Requests"** (Category: Workflow Complexities)
    - **MATCH IF:** Seller raised > 5 records/requests in a single ticket.
 

@@ -46,6 +46,8 @@ agent: agent2
    #### Workflow Complexities (Requires Metadata/History Check)
    6. **"Complex Processes"** (Category: Workflow Complexities)
    - **MATCH IF**: The case was impacted by a Complex Process (e.g., Intake Freeze Window, PPH).
+   6a. **"Quarter Freeze / YoY Planning & Implementation"** (Category: Workflow Complexities)
+   - **MATCH IF**: The transcript or case history **explicitly cites** a quarter-end / quarter-close freeze, intake-freeze window, or YoY planning/implementation blackout as the cause. **DO NOT** infer from a generic delay, backlog, or "complex process" — there must be an **explicit freeze/blackout reference**. If unsure, use **"Complex Processes"**.
    7. **"Bulk Requests"** (Category: Workflow Complexities)
    - **MATCH IF**: The case involved a Bulk Request (e.g., Bulk Account Ownership changes, >5 accounts) **OR** the **Case_Subject** contains the keyword "Bulk" or "Bulk request".
 

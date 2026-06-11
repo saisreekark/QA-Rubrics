@@ -1,0 +1,31 @@
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+[MA_SCOPED_Reopen] 250 cases × ['Reopen'] × 3 runs (temp 0.0, agent4 pinned)
+  (regen_concurrency=16, match_concurrency=12)
+  run 1/3: Reopen 24.1%(n249)  | OVERALL 24.1%(n249)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+  run 2/3: Reopen 24.6%(n244)  | OVERALL 24.6%(n244)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+  run 3/3: Reopen 25.2%(n246)  | OVERALL 25.2%(n246)
+
+=== [MA_SCOPED_Reopen] accuracy (mean ± 95% CI, n=3, bot=gemini-3.1-pro-preview) ===
+  Reopen      24.6% ± 1.4  (sd 0.6; n≈246; runs [24.1, 24.6, 25.2])
+  OVERALL     24.6% ± 1.4  (sd 0.6; n≈246; runs [24.1, 24.6, 25.2])
+
+wrote /home/saisreekark/Rubrics/evaluator/runs/ab_MA_SCOPED_Reopen_2026-06-09T10-43-13Z.json

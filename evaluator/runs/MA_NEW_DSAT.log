@@ -1,0 +1,15 @@
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+[MA_NEW_DSAT] 51 cases × ['DSAT'] × 3 runs (temp 0.0, agent4 pinned)
+  (regen_concurrency=12, match_concurrency=10)
+  run 1/3: DSAT 19.6%(n51)  | OVERALL 19.6%(n51)
+  run 2/3: DSAT 13.7%(n51)  | OVERALL 13.7%(n51)
+  run 3/3: DSAT 17.6%(n51)  | OVERALL 17.6%(n51)
+
+=== [MA_NEW_DSAT] accuracy (mean ± 95% CI, n=3, bot=gemini-3.1-pro-preview) ===
+  DSAT        17.0% ± 7.4  (sd 3.0; n≈51; runs [19.6, 13.7, 17.6])
+  OVERALL     17.0% ± 7.4  (sd 3.0; n≈51; runs [19.6, 13.7, 17.6])
+
+wrote /home/saisreekark/Rubrics/evaluator/runs/ab_MA_NEW_DSAT_2026-06-09T06-58-20Z.json

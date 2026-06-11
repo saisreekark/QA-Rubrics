@@ -1,0 +1,56 @@
+﻿The provided documents consist of the 2025 Cloud General Incentive Compensation Terms & Conditions (Ts & Cs), the 2025 Cloud SMB Sales Policy, and the Vector Account Governance and SPIFF Playbook.
+
+
+Here is a summary of the key policies and topics covered:1. 2025 Cloud General Incentive Compensation Terms & Conditions (Ts & Cs)
+
+
+This document serves as the overarching guide for incentive compensation for Cloud Sellers in 2025.
+
+
+Key Sections:
+* Policy Statements: Covers essential topics like At-Will Employment, Confidentiality, Seller Eligibility, Ethics and Compliance, and the Cloud Audit and Assurance Policy.
+* Plan Details: Outlines the Sales Compensation structure, including Sales Bonus, Sales Acceleration Bonus, Draws, Special Performance Incentive Funds (SPIFFs), OTV Cap, Chargebacks, Sales Bonus Payment and Timing, and the Windfall Policy.
+* Seller Events: Details how sales compensation is handled for events like new hires (Nooglers), Role Changes, Promotions, Leaves, Rotations, Transfers, and Termination of Employment.
+* Territory, Account and Quota Assignment: Defines policies for Territory Assignment, Account Assignment, Quota Assignment, and specifies the Source of Truth for these assignments.
+* Attainment Components: Provides detailed rules for calculating attainment based on Revenue (including PSSA, Incremental Revenue, and iACV for Subscription), Bookings (including iACV for EAs and GCP Commits), and other components like Mandiant Consulting, PSO and Learning Services, Back-to-Back (B2B), SAP, Workspace Bookings/Watermark/Term Reset, Large Bookings Bonus, and Management By Objectives (MBO).
+* In-Year Policies: Describes the processes for In-Year Changes, including those related to Data Quality (e.g., Account Merge, Hierarchy Changes) and Non-Data Quality (e.g., M&As, Account Type Changes, Account Movement for various FSRs and segments), and In-Year Splits. It also covers policies for handling Sales Bonus Disputes.
+2. 2025 Cloud SMB Sales Policy (Supplemental to Ts & Cs)
+
+
+This policy specifically outlines rules for the Small and Medium Business (SMB) sales teams for Workspace, GCP New Biz, BI Sales & CE, and Security Sales & CE.
+
+
+Key Rules:
+* Segmentation: The SMB sales team focuses on accounts not included in Field segments, categorized into six geographic regions and further divided by sub-regions/countries and seat segments.
+* SMB Workspace NB (New Business): Sellers own new Workspace accounts ("Net New Accounts") and accounts they closed from the last two performance cycles ("Following Two Quarter Accounts"). Territories are based on location, seats, and opportunity source.
+   * Attainment: Granted once a GWS Core SKU is paid. Individual contributor FTEs do not receive attainment for accounts with less than 50 paid seats, with exceptions for the "10x Proof of Concept."
+* SMB Workspace AM (Account Management): Sellers own existing Workspace SMB accounts ("AM Core Accounts") and focus on upselling to SKUs with a higher list price.
+   * Attainment: Calculated based on "Incremental ARR" (Annual Recurring Revenue) at the domain level. User Increase opportunities must meet a threshold of >= 10% of the account's seats with a 10 seat minimum for incremental seats.
+* Territory Movement: If an SMB account moves outside a rep's seat segment by +/- 50 seats, it should be passed to the appropriate rep. Specific exceptions are detailed for Proof of Concept and Rapid Growth Accounts.
+* Salesforce Requirements: Strict requirements are set for SFDC opportunities (activities, creation date, uniqueness, and "Closed Won" stage) to be eligible for attainment.
+* Attainment Amount: Credit is based on Incremental ARR. A 1.25x multiplier applies for AM upgrades (moving to a higher list price core GWS SKU or Business to Enterprise SKU family) for non-PDLs.
+3. Vector Account Governance: Account Changes
+
+
+This document details the updated rules for changing account names and addresses in the Vector system to improve data accuracy.
+
+
+Key Change Categories:
+* Allowed: Changes matching the legal name/address, alignment with first-party (1P) and third-party (3P) resources without creating duplicates, and cosmetic changes (spelling, adding "LLC," local language names).
+* Restricted (Manual Review Required): Changes when a duplicate account already exists (merging via Destiny is recommended), "Doing Business As" (DBA) name changes, and all other changes.
+* Legal Name/Address Changes: Manual review is always required, and they are restricted if the current field account owner rejects the request, or if the seller fails to provide valid proof (D&B, Crunchbase, etc.), or if a duplicate account is found.
+4. SPIFF Playbook
+
+
+This playbook defines the use, governance, and process for Special Performance Incentive Funds (SPIFFs).
+
+
+Key Principles:
+* Definition: SPIFFs are special incentives to drive incremental performance above the existing compensation plan, based on objective metrics.
+* Use Cases: Used for driving specific strategy adjustments, increasing focus on an element not in the core plan, and global strategic initiatives.
+* Not for: Driving performance on a metric already compensated, increasing focus on a product subset, using excess budget, spot bonuses, or replacing strong management.
+* Governance:
+   * Must be Objective, Necessary, Executable, and Supported & Funded (VP+ support and earmarked budget).
+   * Limit of 3 concurrent SPIFFs for FSRs/CEs (2 in Q1) and 1 concurrent SPIFF for other roles (SMB, Partner Roles, Specialists).
+* Process: Requires a formal proposal submission, review (at the latest 3 weeks prior to the start of the quarter), finalization of details, and approval. Payout must align with the quarterly cycle (approximately 60 days following quarter end).
+* Non-Compensatory Levers: Other methods for driving behavior, like gamifying without monetary reward, OKR metrics, and public recognition, are encouraged. Sales competitions without monetary or in-kind rewards are limited to 2 contests per role, per quarter.

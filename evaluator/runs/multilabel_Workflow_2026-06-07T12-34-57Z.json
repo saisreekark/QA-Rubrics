@@ -1,0 +1,15 @@
+{
+  "tp": 0,
+  "fp": 6,
+  "fn": 0,
+  "precision": 0.0,
+  "recall": NaN,
+  "f1": NaN,
+  "tn": 0,
+  "n_cases": 6,
+  "n_gold_error": 0,
+  "n_bot_error": 6,
+  "error_type_acc": NaN,
+  "error_type_classified_of": 0,
+  "n_unmapped_only": 0
+}

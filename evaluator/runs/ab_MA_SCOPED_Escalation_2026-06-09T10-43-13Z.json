@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "label": "MA_SCOPED_Escalation",
+    "model": "gemini-3.1-pro-preview",
+    "matcher": "gemini-2.5-pro",
+    "runs_done": 3,
+    "runs_target": 3,
+    "sample": 211,
+    "months": [
+      "2026-03",
+      "2026-04"
+    ],
+    "complete": true
+  },
+  "Escalation": {
+    "runs": [
+      14.85148514851485,
+      16.748768472906402,
+      15.422885572139302
+    ],
+    "mean": 15.674379731186852,
+    "stdev": 0.9733231669285592,
+    "ci95_half": 2.4163780874692216,
+    "audited_mean": 202
+  },
+  "OVERALL": {
+    "runs": [
+      14.85148514851485,
+      16.748768472906402,
+      15.422885572139302
+    ],
+    "mean": 15.674379731186852,
+    "stdev": 0.9733231669285592,
+    "ci95_half": 2.4163780874692216,
+    "audited_mean": 202
+  }
+}

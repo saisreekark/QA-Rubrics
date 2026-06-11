@@ -54,6 +54,8 @@ agent: agent3
    - VIOLATION IF: The request required mandatory RSO/CEC/Comp Admin approval, and the agent failed to handle the approval process per the **CONTEXT**.
    11. **"Complex Processes"**
    - VIOLATION IF: The case was impacted by a Complex Process (e.g., Intake Freeze Window, PPH) (requires **CONTEXT** on process rules).
+   11a. **"Quarter Freeze / YoY Planning & Implementation"**
+   - VIOLATION IF: The transcript or case history **explicitly cites** a quarter-end / quarter-close freeze, intake-freeze window, or YoY planning/implementation blackout as the cause. **DO NOT** infer from a generic delay, backlog, or "complex process" — there must be an **explicit freeze/blackout reference**. If unsure, use **"Complex Processes"**.
    12. **"Bulk Requests"**
    - VIOLATION IF: The case involved a Bulk Request and Agent failed to follow the dedicated process (requires **CONTEXT** on bulk request policy).
    13. **"Missing Documentation"**

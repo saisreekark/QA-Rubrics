@@ -26,8 +26,8 @@ agent: agent3
    #### PRIORITY 2: WORKFLOW (Did the Process Fail?)
    3. **"Approvals/Exceptions Required"** (Category: Workflow Complexities)
    - **MATCH IF:** Reopen caused by denied/delayed RSO/CEC Approval.
-   4. **"Complex Processes e.g. Quarter close guidelines"** (Category: Workflow Complexities)
-   - **MATCH IF:** Reopen occurred due to Quarter Close Freeze blocking the request and processing delay caused by the quarter closure freeze.
+   4. **"Complex Processes"** (Category: Workflow Complexities)
+   - **MATCH IF:** Reopen caused by a multi-step / complex process the seller or agent had to navigate.
    5. **"Delayed/Inaccurate routing to another XFn support team"** (Category: XFn Support Efficacy)
    - **MATCH IF:** Case bounced between teams *after* the reopen.
    6. **"Delayed/Inaccurate routing due to complexity of the case"** (Category: XFn Support Efficacy)
@@ -51,6 +51,21 @@ agent: agent3
        - **MATCH IF:** Reopen is just the User arguing against T&C.
    14. **"Additional or different Query"** (Category: New Query)
        - **MATCH IF:** The Reopen Message contains a completely NEW question.
+
+
+   #### PRIORITY 4: PRODUCT/TOOLS GAP & PLANNING
+   15. **"Quarter Freeze / YoY Planning & Implementation"** (Category: Workflow Complexities)
+       - **MATCH IF:** The transcript or case history **explicitly cites** a quarter-end / quarter-close freeze, intake-freeze window, or YoY planning/implementation blackout as the reason the request could not be processed.
+       - **DO NOT** infer this from a generic delay, backlog, approval wait, or "complex process" — there must be an **explicit freeze/blackout reference**. If unsure, use **"Complex Processes"** instead.
+       - **ONLY** applies when a freeze blocked the processing of the **ORIGINAL** request.
+   16. **"Feature is not Available/doesn't exist"** (Category: Product Limitation)
+       - **MATCH IF:** Reopen because the product genuinely cannot do what the seller needs (no such feature exists).
+   17. **"Latency issue (need time to reflect changes)"** (Category: Product Limitation)
+       - **MATCH IF:** Reopen because a correct change had not yet propagated / reflected in the system at the time.
+   18. **"Bug/Technical issues with GCBP"** (Category: Product Bugs)
+       - **MATCH IF:** Reopen caused by a confirmed bug / technical issue in GCBP.
+   19. **"Bug/Technical issues with internal tools"** (Category: Product Bugs)
+       - **MATCH IF:** Reopen caused by a confirmed bug / technical issue in an internal tool.
 
 
    ### OUTPUT FORMAT (PURE TEXT)

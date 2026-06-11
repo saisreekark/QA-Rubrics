@@ -5,15 +5,19 @@ Six frameworks run on every case. Each emits its own RCA column in
 copy from `HIERARCHY_CONFIG` in cell 4 of the notebook (snapshot from
 `notebook/content.ipynb`, last updated 2026-01-20).
 
-> ⚠ **Driver-change status (pinned 2026-05-29 against canonical + code).**
-> The Voice-of-Seller sheet `1VXtXkbY9PkX2_7RODj2kco3SYSMzYpXyOMt1CPZfZ9Q`
-> is canonical. Diffing it against the live `HIERARCHY_CONFIG` showed the
-> changes are **partially encoded already** — `Product/Tools Gap` is
-> *already* an L1 in TTR/DSAT/Escalation (and matches canonical). The real,
-> still-unencoded diff is small (see "Cross-framework additions" below).
-> **Scope = the 4 driver frameworks only; NOT Quality/Workflow** (confirmed
-> by Pooja). Encoding is the Phase 4 task, gated on the live Zaidul session
-> (exact diff in memory `project_framework_diff_confirmed.md`).
+> ✅ **Driver diff ENCODED locally (2026-05-29) — `HIERARCHY_CONFIG`
+> (cell 4) + `prompts/`.** The 3 confirmed edits are in: Reopen
+> `Product/Tools Gap` L1 (it already existed in TTR/DSAT/Escalation),
+> `Quarter Freeze / YoY Planning & Implementation` L3 across all four
+> driver frameworks, and the `Complex Processes` rename in Reopen.
+> Verified via the hierarchy parser. ⚠ **Local mirror only — not pushed
+> to the prod notebook (`push_notebook.sh` deferred) and not yet
+> Zaidul-reviewed.** Canonical source = the Voice-of-Seller sheet
+> `1VXtXkbY9PkX2_7RODj2kco3SYSMzYpXyOMt1CPZfZ9Q`. **Still pending:** KSI
+> auto-close + Quality consolidation. **Scope = the 4 driver frameworks
+> only; NOT Quality/Workflow.** Accuracy delta needs a regen run
+> (Phase 2.7) — `--match-labels` scores frozen predictions. Exact diff:
+> memory `project_framework_diff_confirmed.md`.
 
 ## Multi-agent setup
 

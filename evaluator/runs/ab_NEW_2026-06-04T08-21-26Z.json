@@ -1,0 +1,26 @@
+{
+  "TTR": {
+    "runs": [
+      16.176470588235293,
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "mean": 16.176470588235293,
+    "stdev": 0.0,
+    "ci95_half": NaN
+  },
+  "Reopen": {
+    "runs": [
+      13.043478260869565,
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "mean": 13.043478260869565,
+    "stdev": 0.0,
+    "ci95_half": NaN
+  }
+}

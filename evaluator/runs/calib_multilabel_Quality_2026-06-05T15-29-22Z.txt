@@ -1,0 +1,433 @@
+QUALITY scorer calibration — 40 cases — 2026-06-05T15-29-22Z
+Tick each '-> phrase_match L3' line: does the hit/miss match your read?
+Deterministic L3 agreement to confirm by hand: 3/13 auto-hits.
+====================================================================================================
+
+CASE 69239864  critical=True
+  [TP            ] Completeness
+        GOLD L3: ['did not answer all explicit / implicit questions or demonstrate comprehension of the issue']
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+        -> phrase_match L3 = False  (human agrees? __)
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Asked for information repeatedly or unnecessarily']
+
+CASE 68916897  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['provided an inaccurate solution']
+        BOT  L3: []
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not respond with appropriate level of empathy', 'Did not use language correctly (grammar, spelling, syntax)', 'Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+
+CASE 69267263  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+  [FN(gold missed)] Responsiveness
+        GOLD L3: ['missed expectations for follow up with the user']
+        BOT  L3: []
+
+CASE 69263222  critical=True
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FN(gold missed)] Relevance
+        GOLD L3: ['created confusion by providing unnecessary information']
+        BOT  L3: []
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)', 'Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+
+CASE 66287271  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved', 'Did not answer all explicit / implicit questions or demonstrate comprehension of the issue']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)', 'Asked for information repeatedly or unnecessarily']
+  [FN(gold missed)] Responsiveness
+        GOLD L3: ['missed expectations for follow up with the user']
+        BOT  L3: []
+
+CASE 69610984  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)']
+  [FN(gold missed)] Responsiveness
+        GOLD L3: ['missed expectations for follow up with the user']
+        BOT  L3: []
+
+CASE 67846565  critical=True
+  [TP            ] Completeness
+        GOLD L3: ['did not answer all explicit / implicit questions or demonstrate comprehension of the issue']
+        BOT  L3: ['Did not seek confirmation if all questions were resolved', 'Did not answer all explicit / implicit questions or demonstrate comprehension of the issue']
+        -> phrase_match L3 = True  (human agrees? __)
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+  [FP(bot only)  ] Responsiveness
+        GOLD L3: []
+        BOT  L3: ['Missed expectations for follow up with the user']
+
+CASE 69613596  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FN(gold missed)] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: []
+
+CASE 70302870  critical=False
+  [TP            ] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)']
+        -> phrase_match L3 = False  (human agrees? __)
+
+CASE 68975341  critical=True
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FN(gold missed)] Relevance
+        GOLD L3: ["did not tailor a solution to client's needs"]
+        BOT  L3: []
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+
+CASE 69138790  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FN(gold missed)] Responsiveness
+        GOLD L3: ['missed expectations for follow up with the user']
+        BOT  L3: []
+
+CASE 70155626  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['provided an inaccurate solution']
+        BOT  L3: []
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FN(gold missed)] Communication Skills
+        GOLD L3: ['did not use language correctly (grammar, spelling, syntax)']
+        BOT  L3: []
+  [FP(bot only)  ] Responsiveness
+        GOLD L3: []
+        BOT  L3: ['Missed expectations for follow up with the user']
+
+CASE 68650763  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FN(gold missed)] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: []
+
+CASE 69198755  critical=True
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FN(gold missed)] Relevance
+        GOLD L3: ['created confusion by providing unnecessary information']
+        BOT  L3: []
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+
+CASE 70202099  critical=True
+  [TP            ] Completeness
+        GOLD L3: ['did not answer all explicit / implicit questions or demonstrate comprehension of the issue']
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+        -> phrase_match L3 = False  (human agrees? __)
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not respond with appropriate level of empathy', 'Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+
+CASE 69109120  critical=False
+  [TP            ] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)']
+        -> phrase_match L3 = False  (human agrees? __)
+
+CASE 68580711  critical=False
+  [TP            ] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)']
+        -> phrase_match L3 = False  (human agrees? __)
+
+CASE 69234119  critical=True
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FN(gold missed)] Relevance
+        GOLD L3: ['created confusion by providing unnecessary information']
+        BOT  L3: []
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Asked for information repeatedly or unnecessarily']
+
+CASE 68877337  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['identified a wrong root cause']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+
+CASE 69375260  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FN(gold missed)] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: []
+
+CASE 69967050  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [TP            ] Responsiveness
+        GOLD L3: ['did not respond to the initial query in a timely manner']
+        BOT  L3: ['Missed expectations for follow up with the user']
+        -> phrase_match L3 = False  (human agrees? __)
+
+CASE 70125230  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['provided an inaccurate solution']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)', 'Did not exude ownership (Unprofessional tone, Delegation issues etc.)', 'Asked for information repeatedly or unnecessarily']
+
+CASE 69523155  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['identified a wrong root cause']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)', 'Asked for information repeatedly or unnecessarily']
+
+CASE 70139545  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [TP            ] Communication Skills
+        GOLD L3: ['asked for information repeatedly or unnecessarily']
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)', 'Asked for information repeatedly or unnecessarily']
+        -> phrase_match L3 = True  (human agrees? __)
+
+CASE 70757591  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['provided an inaccurate solution']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Asked for information repeatedly or unnecessarily']
+
+CASE 70736367  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['identified a wrong root cause']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+
+CASE 68546293  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['identified a wrong root cause']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Asked for information repeatedly or unnecessarily']
+
+CASE 69441426  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FN(gold missed)] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: []
+
+CASE 69740882  critical=True
+  [TP            ] Completeness
+        GOLD L3: ['did not answer all explicit / implicit questions or demonstrate comprehension of the issue']
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+        -> phrase_match L3 = False  (human agrees? __)
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+
+CASE 69785761  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['identified a wrong root cause']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)', 'Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+
+CASE 69101473  critical=True
+  [TP            ] Completeness
+        GOLD L3: ['did not answer all explicit / implicit questions or demonstrate comprehension of the issue']
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+        -> phrase_match L3 = False  (human agrees? __)
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+
+CASE 69449463  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FN(gold missed)] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: []
+
+CASE 69360048  critical=True
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FN(gold missed)] Relevance
+        GOLD L3: ['created confusion by providing unnecessary information']
+        BOT  L3: []
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Asked for information repeatedly or unnecessarily']
+
+CASE 69224491  critical=False
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [TP            ] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)']
+        -> phrase_match L3 = False  (human agrees? __)
+
+CASE 68575691  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['provided an inaccurate solution']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Relevance
+        GOLD L3: []
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+
+CASE 69230732  critical=True
+  [FP(bot only)  ] Accuracy
+        GOLD L3: []
+        BOT  L3: ['Identified a wrong root cause']
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [TP            ] Relevance
+        GOLD L3: ["did not tailor a solution to client's needs"]
+        BOT  L3: ["Did not tailor a solution to user's needs"]
+        -> phrase_match L3 = True  (human agrees? __)
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+
+CASE 70745412  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['provided an inaccurate solution']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)']
+
+CASE 69196737  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['identified a wrong root cause']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Asked for information repeatedly or unnecessarily']
+
+CASE 69352793  critical=False
+  [TP            ] Communication Skills
+        GOLD L3: ['did not structure response']
+        BOT  L3: ['Did not use language correctly (grammar, spelling, syntax)', 'Did not exude ownership (Unprofessional tone, Delegation issues etc.)']
+        -> phrase_match L3 = False  (human agrees? __)
+
+CASE 69637635  critical=True
+  [FN(gold missed)] Accuracy
+        GOLD L3: ['identified a wrong root cause']
+        BOT  L3: []
+  [FP(bot only)  ] Completeness
+        GOLD L3: []
+        BOT  L3: ['Did not seek confirmation if all questions were resolved']
+  [FP(bot only)  ] Communication Skills
+        GOLD L3: []
+        BOT  L3: ['Asked for information repeatedly or unnecessarily']

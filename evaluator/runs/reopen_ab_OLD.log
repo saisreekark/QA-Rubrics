@@ -1,0 +1,17 @@
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+[REOPEN_OLD] 120 cases × ['Reopen'] × 3 runs (temp 0.0, agent4 pinned)
+  (regen_concurrency=24, match_concurrency=20)
+  run 1/3: Reopen 20.8%(n120)  | OVERALL 20.8%(n120)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+  run 2/3: Reopen 20.8%(n120)  | OVERALL 20.8%(n120)
+  run 3/3: Reopen 18.3%(n120)  | OVERALL 18.3%(n120)
+
+=== [REOPEN_OLD] accuracy (mean ± 95% CI, n=3, bot=gemini-3.1-pro-preview) ===
+  Reopen      20.0% ± 3.6  (sd 1.4; n≈120; runs [20.8, 20.8, 18.3])
+  OVERALL     20.0% ± 3.6  (sd 1.4; n≈120; runs [20.8, 20.8, 18.3])
+
+wrote /home/saisreekark/Rubrics/evaluator/runs/ab_REOPEN_OLD_2026-06-08T12-12-17Z.json

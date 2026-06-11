@@ -1,0 +1,18 @@
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+[P3T_OLD] 120 cases × ['TTR'] × 4 runs (temp 0.0, agent4 pinned)
+  (regen_concurrency=24, match_concurrency=20)
+  run 1/4: TTR 21.7%(n120)  | OVERALL 21.7%(n120)
+  run 2/4: TTR 25.8%(n120)  | OVERALL 25.8%(n120)
+  run 3/4: TTR 22.5%(n120)  | OVERALL 22.5%(n120)
+  run 4/4: TTR 24.2%(n120)  | OVERALL 24.2%(n120)
+
+=== [P3T_OLD] accuracy (mean ± 95% CI, n=4, bot=gemini-3.1-pro-preview) ===
+  TTR         23.5% ± 2.9  (sd 1.8; n≈120; runs [21.7, 25.8, 22.5, 24.2])
+  OVERALL     23.5% ± 2.9  (sd 1.8; n≈120; runs [21.7, 25.8, 22.5, 24.2])
+
+wrote /home/saisreekark/Rubrics/evaluator/runs/ab_P3T_OLD_2026-06-09T05-57-10Z.json

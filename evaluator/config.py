@@ -109,11 +109,76 @@ QA2026_LABEL_COLS = {
     "stage": "Stage",
     "closed_date": "closed_date",
 }
-# Updated-framework window — only Feb/Mar 2026 cases carry the new taxonomy.
-QA2026_MONTHS = ("2026-02", "2026-03")
+# Gold window. The UPDATED taxonomy (the framework rebuild we are auditing
+# against) is only reliably in use from **March 2026** for at least some
+# frameworks — Jan/Feb cases were labelled under the OLD taxonomy and must NOT
+# be scored as gold for the new rubric. The audit confirms the cutover: Quarter
+# Freeze / YoY appears in 0 cases before March, then jumps in (`evaluator.
+# gold_audit`, `docs/gold-audit-2026-06-05.md`). So the valid gold window is
+# **March-onward** (April is the latest labelled month; no May/Jun yet). Kept as
+# an EXPLICIT allow-list (not a moving lower-bound) so an A/B denominator stays
+# fixed and runs weeks apart compare; add the next month deliberately when QA
+# labels it. (Earlier locks — ("2026-02","2026-03"), then a too-wide Jan–Apr —
+# both pulled in pre-cutover months; March-onward is the correct window.)
+QA2026_MONTHS = ("2026-03", "2026-04")
 # Bot predictions for these recent cases come from the live I/O output tab.
 LIVE_OUTPUT_SPREADSHEET_ID = SPREADSHEET_ID
 LIVE_OUTPUT_TAB = OUTPUT_SHEET_NAME
+
+# --- QA-2026 multilabel gold: Quality + Workflow (the "6-driver" extension) ---
+# The same gold sheet has two more tabs the driver path can't score, because the
+# bot emits a *dynamic driver list* (driver_1..n of L1/L2/L3) that bypasses the
+# agent4 aggregator, and the gold is multi-label / error-detection rather than a
+# single Primary/Secondary verdict. See docs/quality-workflow-gold-scoping-2026-06-05.md.
+QA2026_QUALITY_TAB = "Quality"
+QA2026_WORKFLOW_TAB = "Workflow & Compliance"
+MULTILABEL_FRAMEWORKS = ("Quality", "Workflow")
+
+# Quality: the five graded dimensions. The *column name* is the dimension (== bot
+# L2); the *cell value* is "no error" or a specific error string (== bot L3;
+# comma-separated for multiples). Map each gold column -> the canonical bot L2.
+QA2026_QUALITY_DIMENSIONS = {
+    "accuracy-L2": "Accuracy",
+    "completeness-L2": "Completeness",
+    "relevance-L-2": "Relevance",
+    "communication skills L-2": "Communication Skills",
+    "responsiveness L-2": "Responsiveness",
+}
+QA2026_QUALITY_COLS = {
+    "case_number": "Case_Number",
+    "question_comment": "question_comment (L3)",
+    "critical": "Critical/Non-critical error",
+    "month": "Month",
+}
+
+# Workflow: only the workflow-adherence dimension carries learnable signal
+# (~6% error). The compliance sub-dimension is effectively dead (2 positives) and
+# is dropped. `Error Status` does NOT track the dimension errors (Yes=2031 vs ~164
+# real errors) — open Q for Zaidul; not used as a label. Join key is `Case_ID`.
+QA2026_WORKFLOW_COLS = {
+    "case_number": "Case_ID",
+    "adherence": "workflow adherence & compliance audits",
+    "compliance": "compliance:data integrity & legal guidelines",
+    "error_status": "Error Status",
+    "month": "Month",
+}
+# Bot L2 label that signals a workflow-adherence error (vs "Unmapped"/compliance).
+WORKFLOW_ADHERENCE_L2 = "Workflow Adherence Error"
+# The "no error" sentinel used across both multilabel tabs.
+MULTILABEL_NO_ERROR = "no error"
+
+# These tabs label `Month` as "Mon'YY" (e.g. "Mar'26"), not a closed_date.
+QA2026_MONTH_ABBR = {
+    "jan": "01", "feb": "02", "mar": "03", "apr": "04", "may": "05", "jun": "06",
+    "jul": "07", "aug": "08", "sep": "09", "oct": "10", "nov": "11", "dec": "12",
+}
+# Windows. Quality only has data through April; keep it on the March cutover.
+# Workflow additionally has May'26 (the driver tab stops at April) and likely is
+# NOT subject to the March driver-taxonomy cutover, so default to March-onward
+# INCLUDING May for a larger error-class denominator — re-verify with gold_audit
+# before quoting (open Q for Zaidul on the workflow cutover).
+QA2026_QUALITY_MONTHS = QA2026_MONTHS
+QA2026_WORKFLOW_MONTHS = ("2026-03", "2026-04", "2026-05")
 
 # QA semantics: "People Gap" is the only agent-error L1. No People Gap = no error.
 ERROR_L1 = "people gap"

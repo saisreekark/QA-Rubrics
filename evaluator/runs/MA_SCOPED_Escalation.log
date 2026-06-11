@@ -1,0 +1,17 @@
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+/home/saisreekark/.local/lib/python3.12/site-packages/gspread_pandas/spread.py:401: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  .replace("", np.nan)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+[MA_SCOPED_Escalation] 203 cases × ['Escalation'] × 3 runs (temp 0.0, agent4 pinned)
+  (regen_concurrency=16, match_concurrency=12)
+  run 1/3: Escalation 14.9%(n202)  | OVERALL 14.9%(n202)
+ERROR:regen: Agent 4 Failed: [Errno -3] Temporary failure in name resolution
+  run 2/3: Escalation 16.7%(n203)  | OVERALL 16.7%(n203)
+  run 3/3: Escalation 15.4%(n201)  | OVERALL 15.4%(n201)
+
+=== [MA_SCOPED_Escalation] accuracy (mean ± 95% CI, n=3, bot=gemini-3.1-pro-preview) ===
+  Escalation  15.7% ± 2.4  (sd 1.0; n≈202; runs [14.9, 16.7, 15.4])
+  OVERALL     15.7% ± 2.4  (sd 1.0; n≈202; runs [14.9, 16.7, 15.4])
+
+wrote /home/saisreekark/Rubrics/evaluator/runs/ab_MA_SCOPED_Escalation_2026-06-09T10-43-13Z.json

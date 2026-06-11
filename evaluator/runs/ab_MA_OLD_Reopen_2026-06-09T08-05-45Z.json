@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "label": "MA_OLD_Reopen",
+    "model": "gemini-3.1-pro-preview",
+    "matcher": "gemini-2.5-pro",
+    "runs_done": 3,
+    "runs_target": 3,
+    "sample": 250,
+    "months": [
+      "2026-03",
+      "2026-04"
+    ],
+    "complete": true
+  },
+  "Reopen": {
+    "runs": [
+      19.6,
+      18.4,
+      20.4
+    ],
+    "mean": 19.466666666666665,
+    "stdev": 1.0066445913694335,
+    "ci95_half": 2.4991020609633203,
+    "audited_mean": 250
+  },
+  "OVERALL": {
+    "runs": [
+      19.6,
+      18.4,
+      20.4
+    ],
+    "mean": 19.466666666666665,
+    "stdev": 1.0066445913694335,
+    "ci95_half": 2.4991020609633203,
+    "audited_mean": 250
+  }
+}

@@ -1,0 +1,233 @@
+Matcher calibration — DSAT — 45 cases — 2026-06-05T02-16-21Z
+Read each: does the verdict agree with what a human would say given GOLD vs BOT?
+====================================================================================================
+
+CASE 69189679   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved
+  WHY : The human-labeled primary driver is Process Gap / Workflow Complexities [Quarter Freeze / YoY Planning & Implementation], which points to a systemic issue. The bot identified People Gap / Completeness [Did not seek confirmation if all questions were resolved], which points to an agent-specific commu
+
+CASE 70306336   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user expects unrealistic response time]'
+  BOT : Unmapped > Unmapped > None
+  WHY : The human label is L1: user gap, L3: user expects unrealistic response time. The bot's label is L1: Unmapped. The bot failed to classify the case, which is a clear mismatch.
+
+CASE 69401676   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The human's primary driver is 'user gap / user disagrees with the policies/processes/functionalities', attributing the DSAT to the user's feelings about the outcome. The bot's primary driver is 'People Gap / Identified a wrong root cause', attributing the DSAT to the agent's incorrect analysis. Thes
+
+CASE 68642191   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [complex processes]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human label is Process Gap / Workflow Complexities [Complex Processes], indicating a delay due to a complex internal process. The bot incorrectly identified People Gap / Completeness / Did not seek confirmation if all questions were resolved, focusing on the agent's closing behavior rather than 
+
+CASE 69857865   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : People Gap > Accuracy > Provided an inaccurate solution
+  WHY : The bot identified the primary driver as People Gap / Provided an inaccurate solution, indicating an agent error. The human ground truth is User Gap / User disagrees with the policies/processes/functionalities, which points to a user issue. These are fundamentally different root causes.
+
+CASE 69079432   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : People Gap > Completeness > Did not answer all explicit / implicit questions or demonstrate comprehension of the issue
+  WHY : The human's ground truth is User Gap / User disagrees with the policies/processes/functionalities, indicating the user's dissatisfaction with the policy is the root cause. The bot incorrectly identified People Gap / Completeness / Did not answer all explicit / implicit questions, blaming the agent f
+
+CASE 69613562   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The human's primary driver is User Gap > User disagrees with the policies/processes/functionalities, while the bot's primary driver is People Gap > Accuracy > Identified a wrong root cause. The human attributes the issue to the user's disagreement with a policy, whereas the bot attributes it to an a
+
+CASE 66959807   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The bot identified a People Gap > Accuracy > Identified a wrong root cause, indicating an agent performance issue. The human ground truth is User Gap > User disagrees with the policies/processes/functionalities, which attributes the DSAT to the user's reaction to a policy, not an agent error. These 
+
+CASE 69726646   verdict=Incorrect  conf=1.00
+  GOLD: L1='people gap'  L2/L3='completeness [did not answer all explicit / implicit questions or demonstrate comprehension of the issue ]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The bot correctly identified the L1 driver as People Gap, but incorrectly identified the L2/L3 as Accuracy / Identified a wrong root cause. The human-labeled ground truth was Completeness / did not answer all explicit / implicit questions or demonstrate comprehension of the issue. These are distinct
+
+CASE 69525114   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human's primary driver is Process Gap [Quarter Freeze / YoY Planning & Implementation], while the bot's primary driver is People Gap [Did not seek confirmation if all questions were resolved]. The bot incorrectly focused on the agent's communication, whereas the human correctly identified the sy
+
+CASE 68948515   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not answer all explicit / implicit questions or demonstrate comprehension of the issue  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The bot's primary driver is People Gap -> Completeness, focusing on the agent's communication. The human's primary driver is Process Gap -> Workflow Complexities, focusing on the 'quarter freeze' which was the actual root cause. These are fundamentally different categories.
+
+CASE 68877337   verdict=Incorrect  conf=1.00
+  GOLD: L1='people gap'  L2/L3='accuracy [identified a wrong root cause ]'
+  BOT : People Gap > Completeness > Did not answer all explicit / implicit questions or demonstrate comprehension of the issue  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The bot's primary driver L1 (People Gap) matches the human's, but the L2/L3 do not. The bot chose 'Completeness / Did not answer all explicit / implicit questions...' while the human ground truth is 'Accuracy / Identified a wrong root cause'. These are distinct sub-drivers in the rubric.
+
+CASE 66676085   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [complex processes]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human label is Process Gap / Workflow Complexities, indicating a systemic issue. The bot identified People Gap / Completeness, which points to a specific agent action. These are different root causes.
+
+CASE 68806793   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human's primary driver is Process Gap -> Workflow Complexities [Quarter Freeze]. The bot's primary driver is People Gap -> Completeness. The L1 drivers are different, and the root causes (a systemic process vs. an agent behavior) do not match.
+
+CASE 69204245   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools  ||  Process Gap > Workflow Complexities > Quarter Freeze / YoY Planning & Implementation
+  WHY : The human's primary driver is Process Gap / Quarter Freeze. The bot's primary driver is Product/Tools Gap / Bug/Technical issues with internal tools. The bot incorrectly prioritized the technical issue over the process freeze, which was the actual blocker.
+
+CASE 69170582   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The human's primary driver was 'process gap / workflow complexities', indicating a systemic issue. The bot's primary driver was 'People Gap / Identified a wrong root cause', which is an agent-specific error. These are fundamentally different root causes.
+
+CASE 69692548   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The human's primary driver is User Gap / WOCA, indicating the agent correctly followed the client's advice. The bot's primary driver is People Gap / Identified a wrong root cause, which incorrectly blames the agent for making a mistake. These are fundamentally different and opposing root causes.
+
+CASE 70199891   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human's primary driver is 'user gap / user gap [woca]', indicating the agent's work was correct. The bot's primary driver is 'People Gap / Completeness', which blames the agent for an error. These are contradictory root causes.
+
+CASE 68884634   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Limitation > Latency issue (need time to reflect changes)
+  WHY : The human's primary driver is Process Gap > Workflow Complexities > Quarter Freeze. The bot's primary driver is People Gap > Completeness > Did not seek confirmation. These are fundamentally different root causes.
+
+CASE 69265977   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : People Gap > Completeness > Did not answer all explicit / implicit questions or demonstrate comprehension of the issue  ||  Process Gap > Workflow Complexities > Complex Processes
+  WHY : The human ground truth is User Gap / WOCA, indicating the agent performed correctly and the user's dissatisfaction was not due to an agent error. The bot identified a People Gap / Completeness issue, claiming the agent provided a partial resolution. These are contradictory assessments.
+
+CASE 69485154   verdict=Borderline  conf=0.90
+  GOLD: L1='people gap'  L2/L3='accuracy [provided an inaccurate solution]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The bot and human matched on L1 (People Gap) and L2 (Accuracy). However, the bot chose L3 'Identified a wrong root cause' while the human ground truth is L3 'Provided an inaccurate solution'. While these are very closely related sibling drivers under the same L2, they are distinct options in the rub
+
+CASE 66600482   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='xfn support efficacy [dependency on xfn team for next steps ]'
+  BOT : People Gap > Completeness > Did not answer all explicit / implicit questions or demonstrate comprehension of the issue  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human's primary driver was Process Gap / XFn Support Efficacy, indicating a dependency on another team. The bot's primary driver was People Gap / Completeness, indicating the agent failed to comprehend the user's questions. These are different root causes.
+
+CASE 68962963   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : People Gap > Completeness > Did not answer all explicit / implicit questions or demonstrate comprehension of the issue  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human's primary driver was 'user gap / user disagrees with the policies/processes/functionalities', indicating the user was unhappy with a policy. The bot's primary driver was 'People Gap / Did not answer all explicit / implicit questions or demonstrate comprehension of the issue', which is an a
+
+CASE 69263222   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='documentation [low quality documentation]'
+  BOT : People Gap > Completeness > Did not answer all explicit / implicit questions or demonstrate comprehension of the issue  ||  Process Gap > XFn Support Efficacy > Dependency on XFn Team for next steps
+  WHY : The bot's primary driver is People Gap / Completeness, but the human-labeled primary driver is Process Gap / Low Quality Documentation. The L1 drivers do not match.
+
+CASE 68828715   verdict=Incorrect  conf=1.00
+  GOLD: L1='people gap'  L2/L3='completeness [did not answer all explicit / implicit questions or demonstrate comprehension of the issue ]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The bot's primary driver L1 (People Gap) matches the human's. However, the bot's L2/L3 (Accuracy / Identified a wrong root cause) does not match the human's L2/L3 (Completeness / Did not answer all explicit / implicit questions or demonstrate comprehension of the issue). While the agent's lack of co
+
+CASE 69790696   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Process Gap > Workflow Complexities > Quarter Freeze / YoY Planning & Implementation
+  WHY : The human's primary driver is Process Gap / Quarter Freeze. The bot's primary driver is People Gap / Completeness. These are different L1 categories and represent a systemic issue versus an agent behavior issue, respectively.
+
+CASE 69088287   verdict=Incorrect  conf=1.00
+  GOLD: L1='people gap'  L2/L3='relevance [created confusion by providing unnecessary information]'
+  BOT : People Gap > Completeness > Did not answer all explicit / implicit questions or demonstrate comprehension of the issue  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human label is People Gap / Relevance / Created confusion by providing unnecessary information, while the bot identified People Gap / Completeness / Did not answer all explicit / implicit questions. These are different sub-drivers within the People Gap L1 category.
+
+CASE 69617034   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Limitation > Latency issue (need time to reflect changes)
+  WHY : The bot's primary driver was L1 People Gap, focusing on the agent's case handling. This is incorrect, as the human's ground-truth label is L1 Process Gap, correctly identifying the systemic delay from the 'quarter freeze' as the root cause.
+
+CASE 68832068   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not answer all explicit / implicit questions or demonstrate comprehension of the issue  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human's primary driver is Process Gap [Workflow Complexities / Quarter Freeze], while the bot's primary driver is People Gap [Completeness / Did not answer all explicit / implicit questions]. The human identified a systemic process issue, whereas the bot incorrectly attributed the issue to the a
+
+CASE 69157804   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [complex processes]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The human's primary driver is Process Gap [Complex Processes], indicating a systemic issue with the workflow. The bot's primary driver is People Gap [Identified a wrong root cause], which points to a specific agent error. These are fundamentally different root causes.
+
+CASE 69494561   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [wrong survey response submitted accidentally]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The human's ground truth is 'User Gap / Wrong survey response submitted accidentally', indicating the user made a mistake. The bot identified 'People Gap / Identified a wrong root cause', blaming the agent for misinterpreting the user's query. These are completely different and unrelated root causes
+
+CASE 70416760   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Limitation > Latency issue (need time to reflect changes)
+  WHY : The human's primary driver is Process Gap [Quarter Freeze / YoY Planning & Implementation], which correctly identifies the systemic delay as the root cause. The bot's primary driver is People Gap [Did not seek confirmation if all questions were resolved], which incorrectly focuses on the agent's com
+
+CASE 66436706   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools  ||  Process Gap > XFn Support Efficacy > Dependency on XFn Team for next steps
+  WHY : The human's primary driver was User Gap / User disagrees with the policies/processes/functionalities, while the bot's was Product/Tools Gap / Bug/Technical issues with internal tools. These are fundamentally different root causes.
+
+CASE 70153079   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human's primary driver is Process Gap / Workflow Complexities, but the bot's primary driver is People Gap / Completeness. These are different L1 categories and do not match.
+
+CASE 69432906   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The human's primary driver was L1: user gap / L3: user disagrees with the policies/processes/functionalities. The bot's primary driver was L1: People Gap / L3: Identified a wrong root cause. These are completely different root causes, one focusing on the user's perspective and the other on agent err
+
+CASE 67846565   verdict=Borderline  conf=0.60
+  GOLD: L1='people gap'  L2/L3='accuracy [provided an inaccurate solution]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The bot and human agree on L1 People Gap and L2 Accuracy. However, the human chose L3 'provided an inaccurate solution' while the bot chose the adjacent L3 'Identified a wrong root cause'. The bot's justification mentions both aspects, making its choice defensible but not a perfect match with the gr
+
+CASE 69135706   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The human ground truth is 'user gap / woca', indicating the agent performed correctly and the issue was resolved. The bot identified 'People Gap / Accuracy / Identified a wrong root cause', which is an agent error. These are fundamentally different and contradictory root causes.
+
+CASE 69981091   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Limitation > Latency issue (need time to reflect changes)
+  WHY : The bot's primary driver is People Gap -> Completeness, which does not match the human's primary driver of Process Gap -> Workflow Complexities.
+
+CASE 69614047   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the outcome]'
+  BOT : Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools  ||  User Gap > User Gap > User disagrees with the policies/processes/functionalities
+  WHY : The human's primary driver is User Gap / User disagrees with the outcome. The bot's primary driver is Product/Tools Gap / Bug/Technical issues with internal tools. These are different root causes. The bot focused on an internal escalation about a tool, while the human correctly identified the user's
+
+CASE 70043739   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools  ||  User Gap > User Gap > User disagrees with the policies/processes/functionalities
+  WHY : Human primary is 'user gap / user disagrees with the policies/processes/functionalities'. Bot primary is 'Product/Tools Gap / Bug/Technical issues with internal tools'. The bot incorrectly identified the user's disagreement with a policy as a product bug.
+
+CASE 67220733   verdict=Incorrect  conf=0.90
+  GOLD: L1='people gap'  L2/L3='completeness [did not answer all explicit / implicit questions or demonstrate comprehension of the issue ]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The bot and human agree on the L1 (People Gap) and L2 (Completeness) drivers. However, the bot chose L3 'Did not seek confirmation if all questions were resolved' while the human chose 'Did not answer all explicit / implicit questions or demonstrate comprehension of the issue'. The human's L3 is a m
+
+CASE 69788070   verdict=Incorrect  conf=1.00
+  GOLD: L1='product/tools gap'  L2/L3='product complexity [latency issue (need time to reflect changes)]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : Human L1/L3: product/tools gap / latency issue (need time to reflect changes). Bot L1/L3: People Gap / Identified a wrong root cause. These do not match. The human identified the underlying system issue, while the bot identified the agent's incorrect diagnosis of that issue.
+
+CASE 69923937   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the outcome]'
+  BOT : People Gap > Accuracy > Provided an inaccurate solution
+  WHY : The human ground truth is 'user gap / user disagrees with the outcome', while the bot identified 'People Gap / Provided an inaccurate solution'. The human label indicates the user was the source of the issue, whereas the bot incorrectly blames an agent error. These are completely different root caus
+
+CASE 70385703   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Accuracy > Identified a wrong root cause
+  WHY : The human's primary driver is Process Gap -> Workflow Complexities [Quarter Freeze], while the bot's is People Gap -> Accuracy [Identified a wrong root cause]. The human attributes the issue to the process itself (the freeze), whereas the bot blames the agent for misidentifying the issue. These are 
+
+CASE 69363357   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : People Gap > Completeness > Did not seek confirmation if all questions were resolved  ||  Product/Tools Gap > Product Bugs > Bug/Technical issues with internal tools
+  WHY : The human's primary driver is Process Gap > Workflow Complexities, pointing to a systemic 'quarter freeze'. The bot's primary driver is People Gap > Completeness, which is an unrelated agent behavior issue.
+
+====================================================================================================
+verdict counts: {'Incorrect': 43, 'Borderline': 2}
+audited=45  correct=0  judge_says_correct=0.0%
+(judge↔human agreement is the % of these verdicts a human read confirms — fill in by hand)

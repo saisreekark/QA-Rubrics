@@ -9,9 +9,11 @@ agent: agent2
 
 
    ### CRITICAL INSTRUCTION FOR ACCURACY & OUTPUT
-   1. **BEST MATCH**: Review all rules and select the **Single BEST MATCH** L3 Rule whose definition is the **BEST MATCH** for the evidence in the input data.
-   2. **SINGLE OUTPUT**: Your output MUST be a single line of **plain text** in the pipe-separated format: **"Category | Exact L3 Rule Name | Justification (max 30 words)"**.
-   3. **NO VIOLATION**: If no violation is found, the output MUST be the single word: **"None"**.
+   1. **"None" IS THE DEFAULT, MOST COMMON OUTCOME.** Most cases contain NO violation. Emit a driver ONLY when there is clear, specific evidence that a rule's exact conditions are met. When the evidence is weak, partial, or speculative, output **"None"**.
+   2. **CHECK THE METADATA GATE FIRST.** Many rules have a hard precondition (a specific `Case_Status`, `Reopen_Counter` > 0, an empty field, etc.). If that precondition is not literally satisfied by the input data, the rule is NOT violated — do not flag it. Never infer or assume a gate is met.
+   3. **ONE BEST MATCH, ONLY IF IT CLEARS THE BAR**: If — and only if — at least one rule's conditions are clearly met, select the **Single BEST MATCH** L3 Rule whose definition best fits the evidence.
+   4. **SINGLE OUTPUT**: Your output MUST be a single line of **plain text** in the pipe-separated format: **"Category | Exact L3 Rule Name | Justification (max 30 words)"**. The justification MUST cite the specific evidence (including the gating metadata value) that proves the violation.
+   5. **NO VIOLATION**: If no rule's conditions are clearly met, the output MUST be the single word: **"None"**.
 
 
    **Input Data:**

@@ -9,10 +9,17 @@ Every link, ID, and stakeholder used by this project.
 | **I/O sheet (Tricks)** — input `Cases for Summary`, output `RCA_Analysis_Output_1` | https://docs.google.com/spreadsheets/d/1Lmo5laSelj8Yp-ANjuZ_cQVnVM3W9XB6mNRt_J94juM/edit |
 | **Voice of Seller RCA Frameworks** (authoritative L1/L2/L3 — includes the confirmed driver updates) | `1VXtXkbY9PkX2_7RODj2kco3SYSMzYpXyOMt1CPZfZ9Q` — one tab per framework: `TTR Root Cause Analysis` (gid 0), `ReOpen Cases Root Cause Analysis` (929537954), `DSAT Root Cause Analysis` (347015126), `Escalations Root Cause Analysis` (1070001996), `Quality` (877315225), `Workflow Adherence & Compliance Audits` (1793285379). Layout: col A = Level 1, B = Level 2, C = Level 3, D = Definitions/Examples. |
 | **Q+ summary / AI Drivers** | https://docs.google.com/document/d/1l5_uW4z-t_H_KdsGPV_88xiIsBd4W_qka1lS8dA2YHs/edit |
-| SOP_Guide | `1LJPbOEi7eUB21ndEFx8NFLc3QRBxjF_lVf1lusRIvkw` |
+| SOP_Guide | `1LJPbOEi7eUB21ndEFx8NFLc3QRBxjF_lVf1lusRIvkw` — **Zaidul shared 2026-06-09; read OK via Drive export + `x-goog-user-project: gtm-cloud-helpdesk` header; saved at `docs/kb-source/SOP_Summary.txt`.** |
 | Terms_Conditions | `14uSCmn0OZB9x3Mm2Zi6HsrVI5I181mpx_ESlA2kQmak` |
-| Plan_Summary | `1A3lwFGFAmiNHCTsKg2lNhn74eC0tRGYg6vaPzdyUr9g` |
-| Do_Not_Contact_Data | `1J0VyGVmWjoZBbyk7Ra9vl2Bh3mdG6ZCMADkCzBhUh6Y` (tab: `Do NOT tag`) |
+| Plan_Summary | `1A3lwFGFAmiNHCTsKg2lNhn74eC0tRGYg6vaPzdyUr9g` — **Zaidul shared 2026-06-09 (content titled "Terms & Conditions Summary"); read OK same way; saved at `docs/kb-source/Terms_Conditions_Summary.txt`.** |
+| Do_Not_Contact_Data | `1J0VyGVmWjoZBbyk7Ra9vl2Bh3mdG6ZCMADkCzBhUh6Y` (tab: `Do NOT tag`) — PII sheet |
+
+> **KB access update (2026-06-09):** Zaidul shared **SOP_Guide** + **Plan_Summary** (2 of the 4 KB
+> docs); both **read successfully** via the Drive export API using the corp token **with the
+> `x-goog-user-project: gtm-cloud-helpdesk` quota-project header** (plain ADC 403s without it).
+> This suggests the earlier KB-403 may be solvable with the user token + that header — **a path to
+> a prod-faithful KB snapshot (real absolutes for Phase 4) worth verifying on all 4 docs.** See
+> memory `reference_kb_source_docs` / `reference_kb_local_access`.
 
 ## Newly shared (2026-05-14 Connect)
 
@@ -22,7 +29,8 @@ Every link, ID, and stakeholder used by this project.
 | QA-team prompt review doc | `1ALZRqSB2tqTAYZs_HlfoqN-fDOxyXsA6GDbwPOUWpXc` | Where Zaidul's QA team leaves comments after testing prompts. |
 | Additional sheet (RCA labelling) | `1LZ6z_csxzkWB5IARImKyifC81zJmJmqBf_nNKkdaZx4` | Purpose TBC — ask Zaidul in live session. |
 | Additional doc | `1W4GtzgvBhnJUghE4h5S7yUmavz8Wm7UDrhE3HpwsSsg` | Purpose TBC. |
-| **QA dump — human ground-truth labels** (NOT legacy; see `connect-2026-05-29.md`) | `1tbrQxJbjRLEn6yKB7djXsPfkFMKWHICKTy-X8Y5KzRY` | Per-framework label tabs (`TTR`/`Reopen`/`Escalation`/`DSAT`/`Quality`/`Compliance and Workflow adherence`) with reviewer L1/L2/L3, plus bot predictions in `RCA_Analysis_Output` (header on row 2). The evaluator's label-match gold source. |
+| **QA-2026 gold case set** (ADOPTED gold; `--gold-source qa2026`) | `1_MvXAMTIUcHS9ne9vJHnA_l9wviNW87mcmgNYnGkXlg` | **3 tabs.** `DSAT/Reopen/Escalation/TTR` — the driver gold we score (split by `Stage`, window Mar–Apr 2026). `Quality` (142 rows) — 5 dimension-graded L2 columns, multi-label, ~85 usable Mar–Apr. `Workflow & Compliance` (2,683 rows) — workflow-adherence dimension (~6% error, the signal) + a near-empty compliance dimension; join key `Case_ID`; has May'26. Quality/Workflow not yet scored — see `docs/quality-workflow-gold-scoping-2026-06-05.md`. Bot side = live output tab `RCA_Analysis_Output_1`. |
+| **QA dump — human ground-truth labels** (legacy driver baseline; superseded by QA-2026) | `1tbrQxJbjRLEn6yKB7djXsPfkFMKWHICKTy-X8Y5KzRY` | Per-framework label tabs (`TTR`/`Reopen`/`Escalation`/`DSAT`/`Quality`/`Compliance and Workflow adherence`) with reviewer L1/L2/L3, plus bot predictions in `RCA_Analysis_Output` (header on row 2). Old-taxonomy labels; reachable via `--gold-source dump`. |
 | **Legacy** — old I/O sheet 2 | `1G3p6oKcsp71YP1pI180gow1XBn47KpXA1zZQa6ej154` | Commented out in notebook cell 2. |
 
 ## Pantheon notebook

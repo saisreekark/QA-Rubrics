@@ -1,0 +1,183 @@
+WORKFLOW scorer calibration — 40 cases — 2026-06-05T13-30-06Z
+Tick each '-> phrase_match error-type' line on the true positives.
+Deterministic error-type agreement to confirm by hand: 13/19 auto-hits.
+====================================================================================================
+
+CASE 71147590  [TP]  unmapped_only=False
+        GOLD error types: ["didn't solution offer the case correctly"]
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = False  (human agrees? __)
+
+CASE 70704605  [TP]  unmapped_only=False
+        GOLD error types: ["didn't send the correct canned response"]
+        BOT  adherence L3: ["Didn't send the correct Canned Response", 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 70728537  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 70232058  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Invalid transfer', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 69292796  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 70992819  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Did not capture all relevant case notes (from meeting/chat/case pings) in the consult case']
+        -> phrase_match error-type = False  (human agrees? __)
+
+CASE 69352923  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 70973494  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 68955318  [TP]  unmapped_only=False
+        GOLD error types: ['incorrectly captured the case status']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = False  (human agrees? __)
+
+CASE 71009247  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 69690675  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Did not capture all relevant case notes (from meeting/chat/case pings) in the consult case']
+        -> phrase_match error-type = False  (human agrees? __)
+
+CASE 69491515  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 69617582  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 70898450  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 70992213  [FN(gold missed)]  unmapped_only=False
+        GOLD error types: ['incorrectly captured the case status']
+        BOT  adherence L3: []
+
+CASE 69954173  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 69407493  [TP]  unmapped_only=False
+        GOLD error types: ["didn't send the correct canned response"]
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = False  (human agrees? __)
+
+CASE 71207382  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 70503863  [TP]  unmapped_only=False
+        GOLD error types: ['incorrectly captured the case status']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = False  (human agrees? __)
+
+CASE 70742234  [TP]  unmapped_only=False
+        GOLD error types: ['missing vector case hygiene fields']
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+        -> phrase_match error-type = True  (human agrees? __)
+
+CASE 70755221  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 68404996  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 69633432  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 69407647  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Missing vector case hygiene fields']
+
+CASE 71149610  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 69948561  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 70660187  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 70650427  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 68906296  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 70887261  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 70256966  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 69981882  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 70046782  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 71101044  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Case stalled without progress', 'Missing vector case hygiene fields']
+
+CASE 69890290  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 70724337  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 70897456  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 68106402  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Missing vector case hygiene fields']
+
+CASE 69674475  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']
+
+CASE 70870786  [FP(bot only)]  unmapped_only=False
+        GOLD error types: []
+        BOT  adherence L3: ['Incorrectly handled the re-open ticket', 'Missing vector case hygiene fields']

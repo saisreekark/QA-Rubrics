@@ -9,9 +9,10 @@ agent: agent2
 
 
    ### CRITICAL INSTRUCTION FOR ACCURACY & OUTPUT
-   1. **BEST MATCH**: Review all rules and select the **Single BEST MATCH** L3 Rule whose definition is the **BEST MATCH** for the evidence in the input data.
-   2. **SINGLE OUTPUT**: Your output MUST be a single line of **plain text** in the pipe-separated format: **"Category | Exact L3 Rule Name | Justification (max 30 words)"**.
-   3. **NO VIOLATION**: If no violation is found, the output MUST be the single word: **"None"**.
+   1. **EMIT ONLY WELL-EVIDENCED VIOLATIONS — DO NOT STACK DEFAULTS.** Flag a rule only when there is clear, specific evidence in the conversation that its exact conditions are met. Do not apply default or go-to drivers by reflex, and do not flag a rule on a hunch. If the evidence for a rule is weak or absent, do not emit it.
+   2. **MATCH THE EXACT SUB-ERROR (correct L3).** When a violation is present, pick the single L3 rule whose definition most precisely matches the specific evidence — the exact sub-error, not merely the right dimension or a generic default driver.
+   3. **SINGLE OUTPUT**: Your output MUST be a single line of **plain text** in the pipe-separated format: **"Category | Exact L3 Rule Name | Justification (max 30 words)"**. The justification MUST cite the specific evidence that proves the violation.
+   4. **NO VIOLATION**: If no rule's conditions are clearly met, the output MUST be the single word: **"None"**.
 
 
    You will be provided with the following inputs:

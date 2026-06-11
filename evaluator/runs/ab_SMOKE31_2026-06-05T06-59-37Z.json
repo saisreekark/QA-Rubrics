@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "label": "SMOKE31",
+    "model": "gemini-3.1-pro-preview",
+    "matcher": "gemini-2.5-pro",
+    "runs_done": 1,
+    "runs_target": 1,
+    "sample": 3,
+    "months": [
+      "2026-03",
+      "2026-04"
+    ],
+    "complete": true
+  },
+  "Reopen": {
+    "runs": [
+      0.0
+    ],
+    "mean": 0.0,
+    "stdev": 0.0,
+    "ci95_half": NaN,
+    "audited_mean": 3
+  },
+  "OVERALL": {
+    "runs": [
+      0.0
+    ],
+    "mean": 0.0,
+    "stdev": 0.0,
+    "ci95_half": NaN,
+    "audited_mean": 3
+  }
+}

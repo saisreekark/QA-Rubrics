@@ -1,0 +1,132 @@
+{
+  "all": {
+    "n_cases": 35,
+    "per_dim": {
+      "Accuracy": {
+        "tp": 4,
+        "fp": 4,
+        "fn": 10,
+        "precision": 0.5,
+        "recall": 0.2857142857142857,
+        "f1": 0.36363636363636365,
+        "l3_classification_acc": 0.5,
+        "l3_classified_of": 4
+      },
+      "Completeness": {
+        "tp": 4,
+        "fp": 19,
+        "fn": 1,
+        "precision": 0.17391304347826086,
+        "recall": 0.8,
+        "f1": 0.2857142857142857,
+        "l3_classification_acc": 0.75,
+        "l3_classified_of": 4
+      },
+      "Relevance": {
+        "tp": 4,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.4444444444444444,
+        "recall": 0.8,
+        "f1": 0.5714285714285714,
+        "l3_classification_acc": 0.5,
+        "l3_classified_of": 4
+      },
+      "Communication Skills": {
+        "tp": 5,
+        "fp": 12,
+        "fn": 2,
+        "precision": 0.29411764705882354,
+        "recall": 0.7142857142857143,
+        "f1": 0.4166666666666667,
+        "l3_classification_acc": 0.6,
+        "l3_classified_of": 5
+      },
+      "Responsiveness": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.75,
+        "recall": 0.5,
+        "f1": 0.6,
+        "l3_classification_acc": 1.0,
+        "l3_classified_of": 3
+      }
+    },
+    "overall": {
+      "tp": 20,
+      "fp": 41,
+      "fn": 17,
+      "precision": 0.32786885245901637,
+      "recall": 0.5405405405405406,
+      "f1": 0.4081632653061225,
+      "l3_classification_acc": 0.65,
+      "l3_classified_of": 20
+    }
+  },
+  "critical_only": {
+    "n_cases": 23,
+    "per_dim": {
+      "Accuracy": {
+        "tp": 4,
+        "fp": 2,
+        "fn": 10,
+        "precision": 0.6666666666666666,
+        "recall": 0.2857142857142857,
+        "f1": 0.4,
+        "l3_classification_acc": 0.5,
+        "l3_classified_of": 4
+      },
+      "Completeness": {
+        "tp": 4,
+        "fp": 10,
+        "fn": 1,
+        "precision": 0.2857142857142857,
+        "recall": 0.8,
+        "f1": 0.4210526315789473,
+        "l3_classification_acc": 0.75,
+        "l3_classified_of": 4
+      },
+      "Relevance": {
+        "tp": 4,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.6666666666666666,
+        "recall": 0.8,
+        "f1": 0.7272727272727272,
+        "l3_classification_acc": 0.5,
+        "l3_classified_of": 4
+      },
+      "Communication Skills": {
+        "tp": 1,
+        "fp": 10,
+        "fn": 0,
+        "precision": 0.09090909090909091,
+        "recall": 1.0,
+        "f1": 0.16666666666666669,
+        "l3_classification_acc": 1.0,
+        "l3_classified_of": 1
+      },
+      "Responsiveness": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": NaN,
+        "f1": NaN,
+        "l3_classification_acc": NaN,
+        "l3_classified_of": 0
+      }
+    },
+    "overall": {
+      "tp": 13,
+      "fp": 25,
+      "fn": 12,
+      "precision": 0.34210526315789475,
+      "recall": 0.52,
+      "f1": 0.41269841269841273,
+      "l3_classification_acc": 0.6153846153846154,
+      "l3_classified_of": 13
+    }
+  }
+}

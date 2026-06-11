@@ -1,0 +1,233 @@
+Matcher calibration — TTR — 45 cases — 2026-06-05T01-48-53Z
+Read each: does the verdict agree with what a human would say given GOLD vs BOT?
+====================================================================================================
+
+CASE 69230732   verdict=Correct  conf=0.90
+  GOLD: L1='process gap'  L2/L3='workflow complexities [complex processes]'
+  BOT : Process Gap > Workflow Complexities > Quarter Freeze / YoY Planning & Implementation
+  WHY : The bot and human both correctly identified the L1 as 'Process Gap' and the L2 as 'Workflow Complexities'. While the L3s differ (Human: 'Complex Processes', Bot: 'Quarter Freeze / YoY Planning & Implementation'), they are sibling categories under the same L2 and refer to the same underlying issue of
+
+CASE 66820260   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : Process Gap > Backlogs > Backlog due to PPR
+  WHY : The human's primary driver is User Gap / WOCA, indicating the delay was due to waiting for the customer. The bot's primary driver is Process Gap / Backlog due to PPR, attributing the delay to an internal data freeze. These are fundamentally different root causes.
+
+CASE 68544503   verdict=Correct  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : Process Gap > Workflow Complexities > Quarter Freeze / YoY Planning & Implementation
+  WHY : The bot's primary driver (Process Gap / Workflow Complexities / Quarter Freeze / YoY Planning & Implementation) is an exact match for the human's label (process gap / workflow complexities [quarter freeze / yoy planning & implementation]).
+
+CASE 68981774   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : Process Gap > Consult Delays > Delayed consult response from L1.5(SME)
+  WHY : The human ground-truth is User Gap / WOCA, meaning the delay was caused by waiting for the user. The bot identified the driver as Process Gap / Delayed consult response from L1.5(SME). These are completely different root causes.
+
+CASE 67078594   verdict=Incorrect  conf=1.00
+  GOLD: L1='product/tools gap'  L2/L3='product bugs [bug/technical issues with internal tools ]'
+  BOT : People Gap > In Assign - Associate Delay > Associate took long time to troubleshoot
+  WHY : The human's primary driver is L1: product/tools gap / L3: product bugs, indicating a system or tool issue. The bot's primary driver is L1: People Gap / L3: Associate took long time to troubleshoot, which blames the agent. These are completely different and unrelated root cause categories.
+
+CASE 66190774   verdict=Correct  conf=1.00
+  GOLD: L1='process gap'  L2/L3='consult delays [delayed consult response from xfn team]'
+  BOT : Process Gap > Consult Delays > Delayed consult response from XFn Team
+  WHY : Human label: L1: process gap, L3: consult delays [delayed consult response from xfn team]. Bot label: L1: Process Gap, L3: Delayed consult response from XFn Team. The bot's labels are an exact match to the human ground truth.
+
+CASE 69938516   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : People Gap > In Assign - Associate Delay > Wrong interpretation of seller query  ||  Process Gap > Consult Delays > Delayed consult response from L2 (FTEs)
+  WHY : The human's primary driver was 'user gap / user gap [woca]', indicating the delay was caused by waiting for the customer. The bot's primary driver was 'People Gap / Wrong interpretation of seller query', attributing the delay to an agent's error. These are conflicting root causes.
+
+CASE 70157893   verdict=Incorrect  conf=0.90
+  GOLD: L1='people gap'  L2/L3='in assign - associate delay [lack of attention by the associate]'
+  BOT : People Gap > In Assign - Associate Delay > Wrong interpretation of seller query  ||  Process Gap > Consult Delays > Delayed consult response from L1.5(SME)
+  WHY : The bot and human agree on the L1 (People Gap) and L2 (In Assign - Associate Delay). However, the bot chose L3 'Wrong interpretation of seller query' while the human chose 'Lack of attention by the associate'. The bot's justification that the agent 'ignored the actual problem in the case description
+
+CASE 69967296   verdict=Correct  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : Process Gap > Workflow Complexities > Quarter Freeze / YoY Planning & Implementation
+  WHY : The bot's primary driver (Process Gap / Workflow Complexities / Quarter Freeze / YoY Planning & Implementation) is an exact match to the human's label.
+
+CASE 67826441   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [wocap]'
+  BOT : Process Gap > Workflow Complexities > Approvals/Exceptions Required  ||  User Gap > User Gap [Delay due to Submitter/Seller responses] > WOCAP
+  WHY : The human's primary driver is User Gap / WOCAP, indicating a delay waiting for a customer or partner. The bot's primary driver is Process Gap / Approvals/Exceptions Required. These are different L1 drivers and therefore do not match.
+
+CASE 69897059   verdict=Incorrect  conf=1.00
+  GOLD: L1='people gap'  L2/L3='woca/wocap - associate error [incorrect info requested by the associate]'
+  BOT : Process Gap > Workflow Complexities > Quarter Freeze / YoY Planning & Implementation
+  WHY : The human label is People Gap / WOCA/WOCAP - Associate Error [Incorrect info requested by the associate], while the bot labeled Process Gap / Workflow Complexities [Quarter Freeze / YoY Planning & Implementation]. The human attributed the issue to an associate's mistake in requesting information, wh
+
+CASE 66681735   verdict=Incorrect  conf=1.00
+  GOLD: L1='product/tools gap'  L2/L3='product bugs [bug/technical issues with internal tools ]'
+  BOT : Process Gap > Consult Delays > Delayed consult response from XFn Team
+  WHY : Human L1/L3: product/tools gap / product bugs. Bot L1/L3: Process Gap / Delayed consult response from XFn Team. The bot is incorrect. The bot's justification confirms a bug was created. The bug itself is the root cause of the delay, not the process of waiting for the cross-functional team to respond
+
+CASE 70340572   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : Unmapped > Unmapped > User Gap [Delay due to Submitter/Seller responses]  ||  User Gap > User Gap > User disagrees with the policies/processes/functionalities
+  WHY : The bot's primary driver L1 is 'Unmapped' while the human's is 'User Gap'. The bot identified the correct concept of a user delay (WOCA) but failed to map it correctly in the rubric hierarchy, placing the L2 concept 'User Gap [Delay due to Submitter/Seller responses]' at the L3 level.
+
+CASE 68807672   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='consult delays [delayed consult response from xfn team]'
+  BOT : People Gap > WOCA/WOCAP - Associate Error > Insufficient info requested by the associate  ||  Process Gap > Consult Delays > Delayed consult response from L1.5(SME)
+  WHY : The bot's primary driver is L1: People Gap, while the human's primary driver is L1: Process Gap. The L1 categories do not match.
+
+CASE 69686831   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user disagrees with the policies/processes/functionalities]'
+  BOT : People Gap > WOCA/WOCAP - Associate Error > Insufficient info requested by the associate  ||  Process Gap > Backlogs > Backlog due to PPH
+  WHY : The human's primary driver was User Gap / User disagrees with the policies/processes/functionalities. The bot's primary driver was People Gap / Insufficient info requested by the associate. These are fundamentally different root causes, one blaming the user and the other blaming an agent error.
+
+CASE 70033703   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='consult delays [delayed consult response from xfn team]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate  ||  Process Gap > Backlogs > Backlog due to PPR
+  WHY : The human's primary driver is Process Gap -> Delayed consult response from XFN team. The bot's primary driver is People Gap -> Inaccurate answer provided by the associate. These are fundamentally different root causes; one is a process issue involving an external team, and the other is an agent qual
+
+CASE 69929377   verdict=Correct  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [quarter freeze / yoy planning & implementation]'
+  BOT : Process Gap > Workflow Complexities > Quarter Freeze / YoY Planning & Implementation
+  WHY : The bot's primary driver (Process Gap / Workflow Complexities / Quarter Freeze / YoY Planning & Implementation) is a perfect match for the human's label (process gap / workflow complexities [quarter freeze / yoy planning & implementation]).
+
+CASE 70296982   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='backlogs [weekend/holiday - uncontrollable]'
+  BOT : Unmapped > Unmapped > Latency issue  ||  Process Gap > Backlogs > Backlog due to PPR
+  WHY : The human's primary driver is `Process Gap / Backlogs / Weekend/Holiday - UnControllable`. The bot's primary driver is `Unmapped / Unmapped / Latency issue`, which maps to `Product/Tools Gap / Product Complexity` in the rubric. These are fundamentally different root causes.
+
+CASE 69259448   verdict=Incorrect  conf=1.00
+  GOLD: L1='product/tools gap'  L2/L3='product complexity [latency issue (need time to reflect changes)]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate
+  WHY : The human's ground truth is 'product/tools gap / product complexity [latency issue (need time to reflect changes)]', attributing the delay to a system issue. The bot classified the driver as 'People Gap / Inaccurate answer provided by the associate', blaming the agent for providing an incorrect answ
+
+CASE 69096925   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [complex processes]'
+  BOT : Unmapped > Unmapped > Latency issue  ||  Process Gap > Backlogs > Backlog due to PPH
+  WHY : The human's primary driver is Process Gap -> Workflow Complexities [Complex Processes]. The bot's primary driver is Product/Tools Gap -> Product Complexity -> Latency issue. These are different L1 categories and therefore do not match.
+
+CASE 66726713   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [wocap]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate  ||  User Gap > User Gap > WOCA
+  WHY : The human's primary driver was User Gap / WOCAP, indicating the delay was caused by waiting for the customer. The bot's primary driver was People Gap / Inaccurate answer provided by the associate. These are fundamentally different root causes.
+
+CASE 68062622   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='consult delays [delayed consult response from xfn team]'
+  BOT : Process Gap > Case arriving late to the queue > Incorrect routing due to complexity of the case  ||  User Gap > User Gap > WOCA
+  WHY : The bot and human agree on the L1 driver 'Process Gap'. However, the human identified the L3 as 'Delayed consult response from xfn team' under the L2 'Consult Delays', while the bot identified the L3 as 'Incorrect routing due to complexity of the case' under the L2 'Case arriving late to the queue'.
+
+CASE 69620331   verdict=Incorrect  conf=1.00
+  GOLD: L1='product/tools gap'  L2/L3='product bugs [bug/technical issues with gcp]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate  ||  Process Gap > Backlogs > Backlog due to PPR
+  WHY : The human's primary driver is 'product/tools gap / product bugs', but the bot's primary driver is 'People Gap / Inaccurate answer provided by the associate'. These are completely different L1 categories and root causes.
+
+CASE 66633886   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='consult delays [delayed consult response from xfn team]'
+  BOT : Process Gap > Workflow Complexities > Complex Processes
+  WHY : The human's primary driver is Process Gap -> Delayed consult response from xfn team. The bot's primary driver is Process Gap -> Complex Processes. While both identify a process gap involving other teams, the human correctly identifies the TTR driver as the *delay* in getting a response from the cons
+
+CASE 66910243   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='consult delays [delayed consult response from l2 (ftes)]'
+  BOT : Process Gap > Workflow Complexities > Approvals/Exceptions Required
+  WHY : The bot correctly identified the L1 driver as 'Process Gap', but its L2/L3 driver 'Workflow Complexities / Approvals/Exceptions Required' is incorrect. The human label is 'Consult Delays / delayed consult response from l2 (ftes)', which is a different L2 path. The bot's justification about waiting f
+
+CASE 66191258   verdict=Borderline  conf=0.80
+  GOLD: L1='process gap'  L2/L3='workflow complexities [complex processes]'
+  BOT : Process Gap > Consult Delays > Delayed consult response from XFn Team
+  WHY : The primary driver is a borderline mismatch. The human chose L1/L3 'Process Gap / Complex Processes' while the bot chose 'Process Gap / Delayed consult response from XFn Team'. The bot's justification mentions a long delay waiting for a response from consulted teams on a complex process. Both labels
+
+CASE 66407833   verdict=Borderline  conf=0.90
+  GOLD: L1='process gap'  L2/L3='workflow complexities [bulk requests]'
+  BOT : Process Gap > Workflow Complexities > Complex Processes
+  WHY : The bot correctly identified the L1 (Process Gap) and L2 (Workflow Complexities) drivers. However, the bot's L3 driver 'Complex Processes' does not match the human's L3 driver 'Bulk Requests'. These are distinct sibling categories in the rubric.
+
+CASE 70417578   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : Process Gap > Backlogs > Backlog due to PPH  ||  User Gap > User Gap > User provided incomplete/inaccurate information
+  WHY : The human's primary driver is User Gap / user gap [woca]. The bot's primary driver is Process Gap / Backlog due to PPH. These are different L1 categories and refer to different root causes.
+
+CASE 69154270   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='consult delays [delayed consult response from xfn team]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate  ||  Process Gap > Backlogs > Backlog due to PPH
+  WHY : The human's primary driver is Process Gap / Delayed consult response from xfn team, indicating a delay caused by waiting for an external team. The bot's primary driver is People Gap / Inaccurate answer provided by the associate, which points to an agent error. These are different root causes at the 
+
+CASE 67183781   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='case arriving late to the queue [delay in transferring cases from xfn other teams]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate
+  WHY : The human's primary driver is 'process gap / case arriving late to the queue [delay in transferring cases from xfn other teams]', indicating a delay from an external team transfer. The bot's primary driver is 'People Gap / Inaccurate answer provided by the associate', which attributes the delay to a
+
+CASE 66485015   verdict=Borderline  conf=0.90
+  GOLD: L1='product/tools gap'  L2/L3='product complexity [latency issue (need time to reflect changes)]'
+  BOT : Unmapped > Unmapped > Latency issue  ||  Process Gap > Backlogs > Backlog due to PPH
+  WHY : The bot's primary driver L3 'Latency issue' correctly matches the human's L3 'latency issue (need time to reflect changes)'. Although the bot failed to map the L1/L2 parents, it correctly identified the specific root cause, which is the most important aspect.
+
+CASE 69862844   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='backlogs [backlog due to pph]'
+  BOT : Process Gap > Workflow Complexities > Quarter Freeze / YoY Planning & Implementation
+  WHY : The primary driver is incorrect. While the L1 'Process Gap' matches, the human's L2/L3 'Backlogs [backlog due to pph]' does not match the bot's L2/L3 'Workflow Complexities / Quarter Freeze / YoY Planning & Implementation'. These are distinct L2 categories under the same L1.
+
+CASE 69144178   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [new/follow up questions]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate
+  WHY : The human's ground truth is 'user gap / new/follow up questions', attributing the delay to the user. The bot's label is 'People Gap / Inaccurate answer provided by the associate', attributing the delay to the agent providing a wrong answer which caused the back-and-forth. These are conflicting root 
+
+CASE 69189874   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [wocap]'
+  BOT : User Gap > User Gap > WOCA
+  WHY : The primary driver is incorrect. The human label is User Gap / WOCAP, indicating a delay from a partner/seller. The bot labeled it as User Gap / WOCA, which is for a delay from the end customer. The bot's own justification mentions the delay was from the 'seller', which supports the human's WOCAP la
+
+CASE 69104431   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='workflow complexities [complex processes]'
+  BOT : People Gap > In Assign - Associate Delay > Associate took long time to troubleshoot  ||  Process Gap > Workflow Complexities > Complex Processes
+  WHY : The human's primary driver was Process Gap / Workflow Complexities [Complex Processes]. The bot's primary driver was People Gap / Associate took long time to troubleshoot. The human attributed the delay to the inherent complexity of the task, whereas the bot attributed it to the agent's performance,
+
+CASE 69422704   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : Process Gap > Backlogs > Backlog due to PPH
+  WHY : The human's ground truth is 'user gap' -> 'user gap [woca]', indicating the delay was caused by waiting for the user. The bot incorrectly identified the driver as 'Process Gap' -> 'Backlogs', which is a completely different root cause category.
+
+CASE 69369444   verdict=Correct  conf=1.00
+  GOLD: L1='product/tools gap'  L2/L3='product bugs [bug/technical issues with internal tools ]'
+  BOT : Product/Tools Gap > Product Bugs > Automation failure resulting in a delayed manual case  ||  Process Gap > Consult Delays > Delayed consult response from XFn Team
+  WHY : The bot's primary driver (L1: Product/Tools Gap, L2: Product Bugs) correctly matches the human's ground-truth label (L1: product/tools gap, L2/L3: product bugs). The bot's justification about a 'system glitch' and 'bug ticket' confirms the alignment.
+
+CASE 69916727   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [new/follow up questions]'
+  BOT : Process Gap > Backlogs > Backlog due to PPH  ||  User Gap > User Gap > New/Follow up Questions
+  WHY : The human's primary driver is 'User Gap / New/Follow up Questions'. The bot's primary driver is 'Process Gap / Backlog due to PPH'. These are different L1 categories and do not match.
+
+CASE 67043808   verdict=Borderline  conf=0.90
+  GOLD: L1='people gap'  L2/L3='in assign - associate delay [lack of attention by the associate]'
+  BOT : People Gap > In Assign - Associate Delay > Associate took long time to troubleshoot  ||  Process Gap > Workflow Complexities > Complex Processes
+  WHY : The bot correctly identified the L1 (People Gap) and L2 (In Assign - Associate Delay) drivers. However, it chose the L3 'Associate took long time to troubleshoot' while the human ground truth was 'lack of attention by the associate'. These are distinct but closely related L3s under the same L2, maki
+
+CASE 69425439   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate  ||  User Gap > User Gap > WOCA
+  WHY : The human's primary driver is User Gap / WOCA. The bot's primary driver is People Gap / Inaccurate answer provided by the associate. These are different root causes, as one blames the user for a delay and the other blames the agent for providing incorrect information.
+
+CASE 68916897   verdict=Incorrect  conf=1.00
+  GOLD: L1='people gap'  L2/L3='in assign - associate delay [lack of attention by the associate]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate  ||  Process Gap > Backlogs > Weekend/Holiday - UnControllable
+  WHY : The bot correctly identified the L1 driver as 'People Gap', but its L2/L3 'Reopen - Associate Error [Inaccurate answer provided by the associate]' does not match the human's L2/L3 'In Assign - Associate Delay [Lack of attention by the associate]'. These are distinct types of associate errors within 
+
+CASE 68637998   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [woca]'
+  BOT : People Gap > In Assign - Associate Delay > Wrong interpretation of seller query
+  WHY : The human's ground-truth label is 'User Gap / WOCA', indicating the delay was due to waiting for the user. The bot's label is 'People Gap / Wrong interpretation of seller query', attributing the delay to an agent error. These are fundamentally different and conflicting root causes.
+
+CASE 69360776   verdict=Incorrect  conf=1.00
+  GOLD: L1='product/tools gap'  L2/L3='product bugs [bug/technical issues with internal tools ]'
+  BOT : Process Gap > Workflow Complexities > Quarter Freeze / YoY Planning & Implementation
+  WHY : The human's primary driver is Product/Tools Gap -> Product Bugs, indicating a technical issue. The bot's primary driver is Process Gap -> Workflow Complexities -> Quarter Freeze / YoY Planning & Implementation, which is a business process issue. These are fundamentally different and non-overlapping 
+
+CASE 66618568   verdict=Incorrect  conf=1.00
+  GOLD: L1='process gap'  L2/L3='consult delays [delayed consult response from xfn team]'
+  BOT : People Gap > Reopen - Associate Error > Inaccurate answer provided by the associate  ||  Process Gap > Backlogs > Backlog due to PPH
+  WHY : The human's primary driver is `Process Gap / Delayed consult response from xfn team`, indicating a delay caused by waiting for an external team. The bot's primary driver is `People Gap / Inaccurate answer provided by the associate`, which is an agent quality error. These are different root causes.
+
+CASE 68853777   verdict=Incorrect  conf=1.00
+  GOLD: L1='user gap'  L2/L3='user gap [user provided incomplete/inaccurate information]'
+  BOT : People Gap > In Assign - Associate Delay > Wrong interpretation of seller query
+  WHY : The human's ground truth is 'user gap / user provided incomplete/inaccurate information', which attributes the delay to the user. The bot classified the issue as 'People Gap / Wrong interpretation of seller query', which attributes the delay to an agent error. These are fundamentally different root 
+
+====================================================================================================
+verdict counts: {'Correct': 6, 'Incorrect': 35, 'Borderline': 4}
+audited=45  correct=6  judge_says_correct=13.3%
+(judge↔human agreement is the % of these verdicts a human read confirms — fill in by hand)

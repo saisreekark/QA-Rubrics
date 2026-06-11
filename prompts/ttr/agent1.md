@@ -29,7 +29,8 @@ agent: agent1
 
 
    2. **"Backlog due to PPR"** (Category: Process Gap)
-   - **MATCH IF:** `Created_Date` is between **25th** of Mar, Jun, Sep, Dec AND **25th** of the following month (Sales Data Freeze).
+   - **MATCH IF:** `Created_Date` is between **25th** of Mar, Jun, Sep, Dec AND **25th** of the following month (Sales Data Freeze) **AND** the transcript/notes show the freeze **actually blocked resolution** during that window.
+   - **DO NOT MATCH** merely because the case existed during the window. If the case was **resolved or progressed normally within the period** (e.g. resolved before the freeze ended), or the real delay was **agent-controllable** (wrong approvals requested, misinterpreted request, inaccurate answer, lack of attention) or a **known product/systems issue under investigation**, choose that actual cause instead — not this date-based default.
 
 
    3. **"Weekend/Holiday - Controllable error"** (Category: In Assign - Associate Delay)
